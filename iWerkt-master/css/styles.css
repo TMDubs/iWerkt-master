@@ -1,0 +1,716 @@
+/* ---------------------
+iWERKT - CSS Style Sheet
+version 1.1
+date: June 13, 2016
+author: TMW 
+-----------------------
+/* Background-colors:
+Blue #1399C9
+LightBlue #00C0EF
+DarkBlue #114361
+Green #4CC0BD
+LightGreen #80CDC9
+Coral #F56954 
+-----------------------*/
+
+/*Keyframes------------------*/
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Frutiger LT Std", sans-serif;
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+  background-color: #262e36;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+p {    
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+.header {
+  max-width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  background: rgb(0, 224, 213);
+  background: rgba(0, 224, 213, 0.4);
+}
+
+.logoBlock {
+  width: 600px;
+  height: 100%;
+  position: absolute;
+  margin-left: 145px;
+}
+
+.logoContainer {
+  max-width: 500px;
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo {
+  color: #fff;
+  margin-top: 120px;
+  font-size: 235px;
+  letter-spacing: 8px;
+  opacity: 0;
+  -moz-animation: fadein 3s ease-in 0.5s forwards; 
+  -webkit-animation: fadein 3s ease-in 0.5s forwards; 
+  -o-animation: fadein 3s ease-in 0.5s forwards; 
+  animation: fadein 3s ease-in 0.5s forwards;
+}
+
+.logoBody {
+  max-width: 793px;
+  font-size: 28px;
+  color: #fff;
+  margin-top: -50px;
+  margin-left: 16px;
+  letter-spacing: 3px !important;
+  opacity: 0;
+  -moz-animation: fadein 1s ease-in 3s forwards; 
+  -webkit-animation: fadein 1s ease-in 3s forwards; 
+  -o-animation: fadein 1s ease-in 3s forwards;
+  animation: fadein 1s ease-in 3s forwards;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+a:hover {
+  color: #F56954;
+  -moz-transition-duration: .33s;
+  -moz-transition-property: background, color, opacity;
+  -ms-transition-duration: .33s;
+  -ms-transition-property: background, color, opacity;
+  -webkit-transition-duration: .33s;
+  -webkit-transition-property: background, color, opacity;
+  transition-duration: .33s;
+  transition-property: background, color, opacity;
+}
+
+span {
+  color: #fff;
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 30px;
+}
+
+.nav {
+  float: left;
+  margin-left: -10px;
+}
+
+.nav li {
+  list-style: none;
+  font-size: 25px;
+  letter-spacing: 3px;
+  margin-top: 25px;
+  opacity: 0;
+  -moz-animation: fadein 1s ease-in 3s forwards; 
+  -webkit-animation: fadein 1.5s ease-in 3s forwards; 
+  -o-animation: fadein 1s ease-in 3s forwards; 
+  animation: fadein 1s ease-in 3s forwards;
+}
+
+.cycle-slideshow, img.slide {
+  background-size: cover;
+  position: relative;
+  height: 100%;
+  width:100%;
+  left: 0;
+  z-index:-9999;
+}
+
+.titleText {
+  font-size: 80px;
+  line-height: 1;
+}
+
+.bodyText {
+  font-family: 'Frutiger Std LT';
+  letter-spacing: -0.2px;
+}
+
+.noPaperSection {
+  overflow: hidden;
+  background-color: #F56954;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #fefefe;
+  height: 1400px;
+}
+
+.noPaperSectionContainer {
+  max-width: 1200px;
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.titleImg01 {
+  background: url('img/homeViewHorizontale.png') no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  width: 631px;
+  height: 1084px;
+  position: absolute;
+  bottom: 0;
+  margin: 0 100px 90px 0;
+  right: 0;
+}
+
+.titleImg02 {
+  background: url('img/calendarViewBlackPhone.png') no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  width: 631px;
+  height: 746px;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 80px;
+  left: 50%;
+  margin-left: -450px;
+}
+
+#noPaperSectionTitle {
+  opacity: 1;
+  margin-top: 110px;
+  text-align: center; 
+}
+
+.noPaperSectionBody {
+  max-width: 793px;
+  font-size: 26px;
+  line-height: 1.5;
+  color: #ffffff;
+  text-align: center;
+  margin: auto;
+  margin-top: 36px;
+  opacity: 0.8;
+}
+
+.keepTrackSection {
+  overflow: hidden;
+  background-color: #4CC0BD;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 1150px;
+}
+
+.keepTrackSectionContainer {
+  max-width: 1200px;
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#keepTrackSectionTitle {
+  opacity: 1;
+  margin-top: 110px;
+  text-align: center; 
+  color: #fff;
+}
+
+.keepTrackSectionBody {
+  max-width: 772px;
+  font-size: 26px;
+  line-height: 1.5;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+  margin-top: 34px;
+}
+
+.keepTrackImgContainer {
+  height: 700px;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #4CC0BD;
+  margin-top: 15px
+}
+
+.keepTrackImgs {
+  display: inline-block !important;
+  margin-left: 50px;
+  float: left;
+  margin-top: 75px;
+}
+
+#keepTrackImg01 {
+  background: url('img/homeViewHorizontalePullOut.png') no-repeat;
+  background-size: contain;
+  margin-left: 50px;
+  width: 304px;
+  height: 540px;
+  position: relative;
+  moz-box-shadow: 5px 5px 8px 43px rgba(0,0,0,0.4);
+  -webkit-box-shadow: 5px 8px 43px 5px rgba(0,0,0,0.4);
+  box-shadow: 5px 8px 43px 5px rgba(0,0,0,0.4);
+}
+
+#keepTrackImg02 {
+  background: url('img/voucherView.png') no-repeat;
+  background-size: contain;
+  position: relative;
+  width: 304px;
+  height: 540px;
+  moz-box-shadow: 5px 5px 8px 43px rgba(0,0,0,0.4);
+  -webkit-box-shadow: 5px 8px 43px 5px rgba(0,0,0,0.4);
+  box-shadow: 5px 8px 43px 5px rgba(0,0,0,0.4);
+}
+
+#keepTrackImg03 {
+  background: url('img/timePickerView.png') no-repeat;
+  background-size: contain;
+  position: relative;
+  width: 304px;
+  height: 540px;
+  moz-box-shadow: 5px 5px 8px 43px rgba(0,0,0,0.4);
+  -webkit-box-shadow: 5px 8px 43px 5px rgba(0,0,0,0.4);
+  box-shadow: 5px 8px 43px 5px rgba(0,0,0,0.4);
+}
+
+.getPaidSection {
+  overflow: hidden;
+  background-color: #1399C9;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 1085px;
+  color: #fefefe;
+}
+
+.getPaidSectionContainer {
+  height: 100%;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.getPaidImg01 {
+  background: url('img/loginView.png') no-repeat;
+  background-size: contain;
+  width: 631px;
+  height: 1084px;
+  position: absolute;
+  float: left;
+}
+
+.getPaidSectionBlock {
+  text-align: left;
+  width: 456px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  margin: 110px 0 0 0;
+}
+
+#getPaidSectionTitle {
+  opacity: 1;
+  font-size: 80px;
+  color: #fff;
+}
+
+.getPaidSectionBody {
+  max-width: 793px;
+  opacity: 0.8;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #ffffff;
+  margin-top: 50px;
+  text-align: justify;
+}
+
+.getAppSection {
+  overflow: hidden;
+  background-color: #00c0ce;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 625px;
+  position: relative;
+}
+
+.getAppSectionContainer {
+  width: 90%;
+  margin: 0 5%;
+}
+
+#getAppSectionTitle {
+  font-size: 100px;
+  color: #fff;
+  text-align: center;
+  width: 90%;
+  margin: 110px auto 0 auto;
+}
+
+.getAppSectionBody {
+  width: 100%;
+  opacity: 0.8;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #fff;
+  text-align: center;
+}
+
+.getAppLinksLarge {
+  max-width: 795px;
+  margin: 100px auto 0 auto;
+}
+
+.getAppIconsLarge {
+  width: 220px;
+  margin: 100px auto 0 auto;
+  text-align: center;
+  display: block;
+}
+
+.iosAppIconLarge {
+  background: url('img/appStore.png') no-repeat;
+  background-size: contain;
+  width: 220px;
+  height: 80px;
+  display: block;
+}
+
+.androidAppIconLarge {
+  background: url('img/gPlay.png') no-repeat;
+  background-size: contain;
+  width: 220px;
+  height: 80px;
+  display: block;
+  margin-top: 30px;
+}
+
+.footer {
+  height: 100px;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #F56954;
+}
+
+.leftSide {
+  width: 46%;
+  position: relative;
+  padding-right: 2%;
+  padding-left: 2%;
+  margin-top: 40px;
+  float: left;
+}
+
+.copyright {
+  font-size: 18px;
+  text-align: left;
+}
+
+.copyright a:hover {
+  border-top: none !important;
+  color: #00c0ce !important;
+}
+
+.rightSide {
+  margin-top: 40px;
+  float: right;
+  text-align: right;
+  overflow: hidden; 
+  padding-left: 2%;
+  padding-right: 2%;
+  position: relative;
+  width: 46%;
+}
+
+.footerLink {
+  display: inline-block;
+  font-size: 18px;
+  margin-left: 28px;
+  vertical-align: top;
+  text-align: right;
+}
+
+#obf {
+   display: inline-block;
+  font-size: 18px;
+  margin-left: 28px;
+  vertical-align: top;
+  text-align: right;
+}
+
+.footerLink a:hover {
+  color: #00c0ce !important;
+}
+
+/*--PRIVACY PAGE---------------------------------*/
+
+.privacyHeader {
+  height: 100px;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #00C0EF;
+  bottom: 0;
+}
+
+.privacyHeaderLeft {
+  width: 46%;
+  position: relative;
+  padding-right: 2%;
+  padding-left: 2%;
+  float: left;
+}
+
+.logoSmall {
+  font-size: 36px;
+  text-align: left;
+  margin-top: 30px;
+  letter-spacing: 8px;
+}
+
+.logoSmall a:hover {
+  border-top: none !important;
+  color: #F56954 !important;
+}
+
+.privacyHeaderRight {
+  float: right;
+  text-align: right;
+  overflow: hidden; 
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-top: 32px;
+  position: relative;
+  width: 46%;
+}
+
+.headerLink {
+  margin-left: 20px;
+  display: inline-block;
+  font-size: 18px;
+  vertical-align: top;
+  text-align: right;
+}
+
+.headerLink a:hover {
+   color: #F56954 !important;
+}
+
+.privacySection {
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #fefefe;
+  height: 6725px;
+  background-color: #1399C9;
+  position: relative;
+}
+
+.privacySectionContainer {
+  max-width: 1200px;
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#privacySectionTitle {
+  opacity: 1;
+  margin-top: 80px;
+  text-align: center; 
+  font-size: 45px !important;
+  letter-spacing: 4px;
+}
+
+#privacySectionDate {
+  text-align: center;
+  opacity: 1;
+  line-height: 20px; 
+  font-size: 12px;
+  letter-spacing: 2.5px;
+}
+
+hr {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.privacySectionBody {
+  max-width: 875px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #ffffff;
+  text-align: justify;
+  margin: auto;
+  margin-top: 50px;
+  opacity: 0.8;
+}
+
+
+/*--TERMS PAGE---------------------------------*/
+
+.termsHeader {
+  height: 100px;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #00C0EF;
+  bottom: 0;
+}
+
+.termsHeaderLeft {
+  width: 46%;
+  position: relative;
+  padding-right: 2%;
+  padding-left: 2%;
+  float: left;
+}
+
+.logoSmall {
+  font-size: 36px;
+  text-align: left;
+  margin-top: 30px;
+  letter-spacing: 8px;
+}
+
+.logoSmall a:hover {
+  border-top: none !important;
+  color: #F56954 !important;
+}
+
+.termsHeaderRight {
+  float: right;
+  text-align: right;
+  overflow: hidden; 
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-top: 32px;
+  position: relative;
+  width: 46%;
+}
+
+.headerLink {
+  margin-left: 20px;
+  display: inline-block;
+  font-size: 18px;
+  vertical-align: top;
+  text-align: right;
+}
+
+.headerLink a:hover {
+   color: #F56954 !important;
+}
+
+.termsSection {
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #fefefe;
+  height: 10675px;
+  background-color: #1399C9;
+  position: relative;
+}
+
+.termsSectionContainer {
+  max-width: 1200px;
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#termsSectionTitle {
+  opacity: 1;
+  margin-top: 80px;
+  text-align: center; 
+  font-size: 45px !important;
+  letter-spacing: 4px;
+}
+
+#termsSectionDate {
+  text-align: center;
+  opacity: 1;
+  line-height: 20px; 
+  font-size: 12px;
+  letter-spacing: 2.5px;
+}
+
+hr {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.termsSectionBody {
+  max-width: 875px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #ffffff;
+  text-align: justify;
+  margin: auto;
+  margin-top: 50px;
+  opacity: 0.8;
+}
+
+
+
+
+
+
+
