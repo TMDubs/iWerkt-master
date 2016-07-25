@@ -95,10 +95,10 @@ p {
   font-size: 235px;
   letter-spacing: 8px;
   opacity: 0;
-  -moz-animation: fadein 3s ease-in 0.5s forwards; 
-  -webkit-animation: fadein 3s ease-in 0.5s forwards; 
-  -o-animation: fadein 3s ease-in 0.5s forwards; 
-  animation: fadein 3s ease-in 0.5s forwards;
+  -moz-animation: fadein 2.25s ease-in 1.25s forwards; 
+  -webkit-animation: fadein 2.25s ease-in 1.25s forwards; 
+  -o-animation: fadein 2.25s ease-in 1.25s forwards; 
+  animation: fadein 2.25s ease-in 1.25s forwards;
 }
 
 .logoBody {
@@ -109,10 +109,10 @@ p {
   margin-left: 16px;
   letter-spacing: 3px !important;
   opacity: 0;
-  -moz-animation: fadein 1s ease-in 3s forwards; 
-  -webkit-animation: fadein 1s ease-in 3s forwards; 
-  -o-animation: fadein 1s ease-in 3s forwards;
-  animation: fadein 1s ease-in 3s forwards;
+  -moz-animation: fadein .5s ease-in 3s forwards; 
+  -webkit-animation: fadein .5s ease-in 3s forwards; 
+  -o-animation: fadein .5s ease-in 3s forwards;
+  animation: fadein .5s ease-in 3s forwards;
 }
 
 a {
@@ -195,7 +195,7 @@ span {
 }
 
 .titleImg01 {
-  background: url('img/homeViewHorizontale.png') no-repeat;
+  background: url('/iWerkt-master/css/img/homeViewHorizontale.png') no-repeat;
   background-size: contain;
   background-position: center bottom;
   width: 631px;
@@ -207,7 +207,7 @@ span {
 }
 
 .titleImg02 {
-  background: url('img/calendarViewBlackPhone.png') no-repeat;
+  background: url('/iWerkt-master/css/img/calendarViewBlackPhone.png') no-repeat;
   background-position: center bottom;
   background-size: contain;
   width: 631px;
@@ -288,7 +288,7 @@ span {
 }
 
 #keepTrackImg01 {
-  background: url('img/homeViewHorizontalePullOut.png') no-repeat;
+  background: url('/iWerkt-master/css/img/homeViewHorizontalePullOut.png') no-repeat;
   background-size: contain;
   margin-left: 50px;
   width: 304px;
@@ -300,7 +300,7 @@ span {
 }
 
 #keepTrackImg02 {
-  background: url('img/voucherView.png') no-repeat;
+  background: url('/iWerkt-master/css/img/voucherView.png') no-repeat;
   background-size: contain;
   position: relative;
   width: 304px;
@@ -311,7 +311,7 @@ span {
 }
 
 #keepTrackImg03 {
-  background: url('img/timePickerView.png') no-repeat;
+  background: url('/iWerkt-master/css/img/timePickerView.png') no-repeat;
   background-size: contain;
   position: relative;
   width: 304px;
@@ -340,7 +340,7 @@ span {
 }
 
 .getPaidImg01 {
-  background: url('img/loginView.png') no-repeat;
+  background: url('/iWerkt-master/css/img/loginView.png') no-repeat;
   background-size: contain;
   width: 631px;
   height: 1084px;
@@ -418,7 +418,7 @@ span {
 }
 
 .iosAppIconLarge {
-  background: url('img/appStore.png') no-repeat;
+  background: url('/iWerkt-master/css/img/appStore.png') no-repeat;
   background-size: contain;
   width: 220px;
   height: 80px;
@@ -426,7 +426,7 @@ span {
 }
 
 .androidAppIconLarge {
-  background: url('img/gPlay.png') no-repeat;
+  background: url('/iWerkt-master/css/img/gPlay.png') no-repeat;
   background-size: contain;
   width: 220px;
   height: 80px;
@@ -482,7 +482,7 @@ span {
 }
 
 #obf {
-   display: inline-block;
+  display: inline-block;
   font-size: 18px;
   margin-left: 28px;
   vertical-align: top;
@@ -491,6 +491,10 @@ span {
 
 .footerLink a:hover {
   color: #00c0ce !important;
+}
+
+.footerLink a.activePage {
+  color: #00BC5B !important;
 }
 
 /*--PRIVACY PAGE---------------------------------*/
@@ -689,6 +693,7 @@ hr {
   line-height: 20px; 
   font-size: 12px;
   letter-spacing: 2.5px;
+  background-color: #1399C9 !important;
 }
 
 hr {
@@ -707,6 +712,163 @@ hr {
   margin-top: 50px;
   opacity: 0.8;
 }
+
+
+  /*-----------------FAQ-----------------------*/
+
+.homeLogo {
+  font-size: 36px;
+  text-align: left;
+  letter-spacing: 3px;
+  background-color: #F56954;
+  padding: 2% 0 0 2%;
+}
+
+.homeLogo a:hover {
+  color: #00c0ef !important;
+}
+
+.faq {
+  overflow: hidden;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  color: #fefefe;
+  position: relative;
+  background-color: #00bfbc;
+}
+
+.faqContainer {
+  max-width: 100vw;
+  margin: 0 auto;
+  position: relative;
+}
+
+#faqTitle {
+  opacity: 1;
+  width: 100vw;
+  height: 12vh;
+  padding-top: .5%;
+  text-align: center; 
+  font-size: 50px !important;
+  letter-spacing: 4px;
+  background-color: #F56954;
+}
+
+.mostFAQs {
+  background-color: #45C0BE;
+  padding-bottom: 1%;
+}
+
+.faqCatBox {
+  float: left;
+  margin: 0 0 1% 1%;
+  overflow: hidden;
+  position: relative;
+  width: 23.7vw;
+  height: 30vh;
+  background: #fff;
+}
+
+#faqCatBox:hover {
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+#faqCat {
+  color: #00c0ef;
+  margin: 33% auto;
+  font-size: 25px;
+  opacity: 1;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  line-height: 2%;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+#faqCat:hover {
+  color: #F56954;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+.moreHelp {
+  width: 100vw;
+  height: 9vh;
+  text-align: center;
+  background-color: #45C0BE;
+  float: left;
+  line-height: 1vh;
+  margin-top: -.5%;
+}
+
+.moreHelp p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#mainCategoriesContainer {
+  background-color: #00bfbc;
+}
+
+#mostFAQsTitle {
+  font-size: 35px;
+  height: 5vh;
+  width: 100vw;
+  margin: 0 1% 3% 1%;
+  padding-top: 3%;
+  color: #fff;
+}
+
+.faqButton {
+  background: #1399C9;
+  border-radius: 20px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.4;
+  padding: 6px 14px;
+}
+
+#faqButtonList {
+  list-style: none;
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#faqButtonList li {
+  float: left;
+  margin-bottom: 2%;
+  margin-right: 1%;
+}
+
+#faqCatTitle {
+  font-size: 35px;
+  height: 5vh;
+  width: 100vw;
+  margin: 3% 1%;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
 
 
 

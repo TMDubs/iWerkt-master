@@ -84,24 +84,24 @@
         <span class='footerLink'><a href='/terms.html'>Terms of Use</a></span>
       </div>   
       <div class='rightSide'>     
-        <span class='footerLink'><a href='http://eepurl.com/b57Xn1'>Subscribe</a></span>  
+        <span class='footerLink'><a href='/faq.html'>Need Help?</a></span> 
         <span class='footerLink'><a href='mailto:&#105;&#110;&#102;&#111;&#64;&#105;&#119;&#101;&#114;&#107;&#116;&#46;&#99;&#111;&#109'>Contact</a></span>
         <span class='footerLink'><a href='#'><i class='fa fa-facebook'></i></a></span>
         <span class='footerLink'><a href='#'><i class='fa fa-twitter'></i></a></span>
       </div>
     </div>
     
-    <script type='text/javascript'>
+     <script type='text/javascript'>
       $('.cycle-slideshow').backstretch(
-        ['/iWerkt-master/css/img/girlHorizontale.jpg','/iWerkt-master/css/img/5thAve.jpg','/iWerkt-master/css/img/birdsNest.jpg','/iWerkt-master/css/img/notebookPhone.jpg','/iWerkt-master/css/img/flowerGirl2.jpg','/iWerkt-master/css/img/phoneOnTable.jpg','/iWerkt-master/css/img/tightRoller.jpg'], {duration: 3000, fade: 1500}
+        ['/iWerkt-master/css/img/slideshow/01.jpg','/iWerkt-master/css/img/slideshow/02.jpg','/iWerkt-master/css/img/slideshow/03.jpg','/iWerkt-master/css/img/slideshow/04.jpg','/iWerkt-master/css/img/slideshow/05.jpg','/iWerkt-master/css/img/slideshow/06.jpg','/iWerkt-master/css/img/slideshow/07.jpg'], {duration: 3000, fade: 2000}
       );
     </script>
 
-    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false">
+    <!--<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false">
     </script>
 
-    <script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us13.list-manage.com","uuid":"96d586c11b35298a962d197d1","lid":"16bb80dc65"}) })
-    </script>
+   <script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us13.list-manage.com","uuid":"96d586c11b35298a962d197d1","lid":"16bb80dc65"}) })
+    </script>-->
 
 
   </body>
