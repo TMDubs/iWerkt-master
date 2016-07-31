@@ -1,108 +1,111 @@
-<!--iWERKT version 1.1-->
-
 <!DOCTYPE html>
 <html>
   <head>
-      <title>iWERKT</title>
+      <title>iWERKT 2.0</title>
 
       <link rel='stylesheet' type='text/css' href='/iWerkt-master/css/styles.css'>
-      <link rel="stylesheet" href="/iWerkt-master/css/animate.css">
+      <meta charset='utf-8'>
+      <meta name='viewport' content='width=device-width initial-scale=1.0, minimum-scale=1.0, user-scalable=1'>
       <link rel="stylesheet" href='/iWerkt-master/css/font-awesome-4.6.3/css/font-awesome.min.css'>
-      <script src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
       <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js'></script>
       
+      <!--Facebook MetaTag(s)-->
+      <meta property="og:title" content="iWERKT" />
+      <meta property="og:description" content="Digital Vouchers 4 Models" />
+      <meta property="og:image" content="http://iwerkt.com/iWerkt-master/css/img/social/facebook/iwerktFacebookPost_470x246.jpg" />
+
   </head>
   <body>
-    <div class='header'>
-      <div class='nav'>
-        <ul>
-          <li><a href='https://itunes.apple.com/us/app/iwerkt/id1097698969?mt=8'>iOS</a><span>|</span><a href='https://play.google.com/store/apps/details?id=com.ivymdl.iwerkt'>Android</a></li>
-        </ul>
+      
+    <div class='home' id='greenScreen'>
+      <div id='socialNav'>
+        <ul id='socialLinks'>
+        <li class='social'><a href='https://www.facebook.com/iwerkt/'><i class='fa fa-facebook'></i></a></li>
+        <li class='social'><a href='https://twitter.com/iwerkt'><i class='fa fa-twitter'></i></a></li>
+        <li class='social'><a href='https://www.instagram.com/iwerkt/?hl=en'><i class='fa fa-instagram'></i></a></li>
+      </ul>
       </div>
-      <div class='logoBlock'>
-        <div class='logoContainer'>
-          <div class='logo'><a href='https://itunes.apple.com/us/app/iwerkt/id1097698969?mt=8'>iWERKT</a></div>
-          <p class='logoBody' id='bodyText'>Digital Vouchers for Models</p>
+      <div id='appLinks'><a href='https://itunes.apple.com/us/app/iwerkt/id1097698969?mt=8'>iOS</a> | <a href='https://play.google.com/store/apps/details?id=com.ivymdl.iwerkt'>Android</a></div>
+      <div id='logo'>iWERKT</div>
+      <div class='subTitle'>DIGITAL VOUCHERS 4 MODELS</div>
+      <div id='slideshow'></div>
+      
+    </div>
+
+    <div class='noPaperContainer'>
+      <div class='title'>No paper.</div>
+      <div class='content' id='noPaperContent'>
+        <p>Finally, no more voucher books.</p>
+        <p>No more piles of fly-away papers.</p>
+        <p>No lost vouchers.</p>
+        <p>No waiting around until you have the chance to get them to your agency.</p>
+        <p class='text' id='npText'>Get your client's signature right on your phone.</p> 
+        <p>Hit send and GO!</p>
+      </div>
+      <div class='screenShots'>
+        <div id='noPaperImg01'><img src='/iWerkt-master/css/img/homeViewHorizontale_631x1084.png'></div>
+        <div id='noPaperImg02'><img src='/iWerkt-master/css/img/calendarViewBlackPhone_631x800.png'></div> 
+      </div>  
+    </div>
+
+    <div class='keepTrackContainer'>
+      <div class='title' id='keepTrackTitle'>Keep track of everything.</div>
+      <div class='content' id='keepTrackContent'>
+        <p>Track your income, keep tabs on whether or not you've been paid for a job, maintain client information, and export your data for tax prep.</p>
+      </div>
+      <div id='keepTrackImgContainer'>
+        <div id='keepTrackImg'><img src='/iWerkt-master/css/img/homeViewHorizontalePullOut.png'></div>
+        <div id='keepTrackImg'><img src='/iWerkt-master/css/img/voucherView.png'></div>
+        <div id='keepTrackImg'><img src='/iWerkt-master/css/img/timePickerView.png'></div>
+      </div>
+    </div>
+
+    <div id='getPaidContainer'>
+      <div id='getPaidImg'>
+        <img src='/iWerkt-master/css/img/loginView.png'>
+      </div>
+      <div class='contentContainer'>
+        <div class='title' id='getPaidTitle'>Get paid <i>faster.</i></div>
+        <div class='content' id='getPaidContent'>
+          <p>Instant delivery.</p>
+          <p>Fewer mistakes.</p>
+          <p>No math to do.</p>
+          <p>No illegible vouchers.</p>
+          <p>No lost vouchers.</p>
+          <p id='text'>With iWerkt, your agency's accounting department will now be able to start their billing process right away - and that means you'll get paid <i>faster!</i></p>
         </div>
       </div>
     </div>
-    <div class='cycle-slideshow'>
-    </div>
-    <div class='noPaperSection'>
-      <div class='noPaperSectionContainer'>
-        <div class='titleImg01'></div>
-        <div class='titleImg02'></div>
-        <div class='titleText' id="noPaperSectionTitle">No paper.</div>
-        <p class='noPaperSectionBody' id='bodyText'>Finally, no more voucher books.<br> No more piles of fly-away papers. No lost vouchers. No waiting around until you have the chance to get them to your agency.<br> Get your client's signature right on your phone, hit send, and go!</p>
-      </div>
-    </div>
-    <div class='keepTrackSection'>
-      <div class='keepTrackSectionContainer'>
-        <div class='titleText' id='keepTrackSectionTitle'>Keep track of everything.</div>
-        <p class='keepTrackSectionBody' id='bodyText'>Track your income, keep tabs on whether or not you've been paid for a job, maintain client information, and export your data for tax prep. 
-        <br>
-        <br>
-        All in one APP.
-        </p>
-        <div class='keepTrackImgContainer'>
-          <span class='keepTrackImgs' id='keepTrackImg01'></span>
-          <span class='keepTrackImgs' id='keepTrackImg02'></span>
-           <span class='keepTrackImgs'id='keepTrackImg03'></span>
+
+    <div class='getAppContainer'>
+      <div class='title' id='getAppTitle'><a href='https://itunes.apple.com/us/app/iwerkt/id1097698969?mt=8'>Get the app.</a></div>
+      <div class='content' id='getAppContent'><p>(it's free)</p>
+        <div class='getAppIconsLarge'>
+          <div id='iosAppIconL'><a href='https://itunes.apple.com/us/app/iwerkt/id1097698969?mt=8'><img src='/iWerkt-master/css/img/appStoreBadge.svg'></a></div>
+          <div id='androidAppIconL'><a href='https://play.google.com/store/apps/details?id=com.ivymdl.iwerkt&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a></div>
         </div>
-      </div>
+      </div>  
     </div>
-    <div class='getPaidSection'>
-      <div class='getPaidSectionContainer'>
-        <div class='getPaidImg01'></div>
-        <div class='getPaidSectionBlock'>
-        <div class='titleText wow bounceInDown' id='getPaidSectionTitle'>Get paid faster.</div>
-        <p class='getPaidSectionBody' id='bodyText'>Instant delivery.<br> Fewer mistakes.<br> No math to do.<br> No illegible vouchers.<br>No lost vouchers.<br><br>With iWerkt, your agency's accounting department will now be able to start their billing process right away - and that means you'll get paid faster! 
-        </p>
-        </div>
-      </div>
-    </div>
-    <div class='getAppSection'>
-      <div class='getAppSection'>
-        <div class='titleText' id='getAppSectionTitle'><a href='https://itunes.apple.com/us/app/iwerkt/id1097698969?mt=8'>Get the app.</a></div>
-        <p class='getAppSectionBody' id='bodyText'>(it's free)</p>
-          <div class='getAppLinksLarge'>
-            <div class='getAppIconsLarge'>
-              <a href='https://itunes.apple.com/us/app/iwerkt/id1097698969?mt=8'>
-                <div class='iosAppIconLarge'></div>
-              </a>
-              <a href='https://play.google.com/store/apps/details?id=com.ivymdl.iwerkt'>
-                <div class='androidAppIconLarge'></div>
-              </a>
-            </div>
-          </div>
-      </div>
-    </div>
+    
     <div class='footer'>
+      <span id='copyright'><a href='#'>&copy NordikLabs 2016</a></span>
       <div class='leftSide'>
-        <span class='copyright'><a href='#'>&copy NordikLabs</a></span>
         <span class='footerLink'><a href='/privacy.html'>Privacy</a></span>
-        <span class='footerLink'><a href='/terms.html'>Terms of Use</a></span>
+        <span class='footerLink'><a href='/terms.html'>Terms</a></span>
       </div>   
       <div class='rightSide'>     
         <span class='footerLink'><a href='/faq.html'>Need Help?</a></span> 
         <span class='footerLink'><a href='mailto:&#105;&#110;&#102;&#111;&#64;&#105;&#119;&#101;&#114;&#107;&#116;&#46;&#99;&#111;&#109'>Contact</a></span>
-        <span class='footerLink'><a href='#'><i class='fa fa-facebook'></i></a></span>
-        <span class='footerLink'><a href='#'><i class='fa fa-twitter'></i></a></span>
+        <span class='footerLink'><a href='https://www.facebook.com/iwerkt/'><i class='fa fa-facebook icon'></i></a></span>
+        <span class='footerLink'><a href='https://twitter.com/iwerkt'><i class='fa fa-twitter icon'></i></a></span>
+        <span class='footerLink'><a href='https://www.instagram.com/iwerkt/?hl=en'><i class='fa fa-instagram icon'></i></a></span>
       </div>
     </div>
-    
-     <script type='text/javascript'>
-      $('.cycle-slideshow').backstretch(
-        ['/iWerkt-master/css/img/slideshow/01.jpg','/iWerkt-master/css/img/slideshow/02.jpg','/iWerkt-master/css/img/slideshow/03.jpg','/iWerkt-master/css/img/slideshow/04.jpg','/iWerkt-master/css/img/slideshow/05.jpg','/iWerkt-master/css/img/slideshow/06.jpg','/iWerkt-master/css/img/slideshow/07.jpg'], {duration: 3000, fade: 2000}
+  
+    <script type='text/javascript' id='slideshow'>
+      $.backstretch(['/iWerkt-master/css/img/slideshow/01.jpg','/iWerkt-master/css/img/slideshow/02.jpg','/iWerkt-master/css/img/slideshow/03.jpg','/iWerkt-master/css/img/slideshow/04.jpg','/iWerkt-master/css/img/slideshow/05.jpg'], {duration: 3000, fade: 2000}
       );
     </script>
-
-    <!--<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false">
-    </script>
-
-   <script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us13.list-manage.com","uuid":"96d586c11b35298a962d197d1","lid":"16bb80dc65"}) })
-    </script>-->
-
-
   </body>
 </html>

@@ -1,17 +1,30 @@
-/* ---------------------
-iWERKT - CSS Style Sheet
-version 1.1
-date: June 13, 2016
-author: TMW 
------------------------
-/* Background-colors:
-Blue #1399C9
-LightBlue #00C0EF
-DarkBlue #114361
-Green #4CC0BD
-LightGreen #80CDC9
-Coral #F56954 
------------------------*/
+/*----------------------------
+IWERKT - Style Sheet
+version:  2.0
+date:     July 20, 2016
+author: TMW
+------------------------------*/
+/*FONTS----------------------
+
+@font-face {
+  font-family: 'Frutiger LT Std';
+  src: url('/iWerkt-master/css/fonts/frutigerLTStd_Bold.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Frutiger LT Std';
+  src: url('/iWerkt-master/css/fonts/frutigerLTStd_Light.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gibson-Regular';
+  src: url('/iWerkt-master/css/fonts/gibsonBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gibson-Semibold';
+  src: url('/iWerkt-master/css/fonts/gibsonSemiboldWebfont.ttf') format('truetype');
+}*/
 
 /*Keyframes------------------*/
 @keyframes fadein {
@@ -42,449 +55,342 @@ Coral #F56954
     from { opacity: 0; }
 }
 
-body {
+* {
   margin: 0;
   padding: 0;
-  font-family: "Frutiger LT Std", sans-serif;
-  font-weight: 100;
-  -webkit-font-smoothing: antialiased;
-  background-color: #262e36;
-}
+  }
 
-body, html {
-  width: 100%;
-  height: 100%;
-}
-
-p {    
-  display: block;
-  -webkit-margin-before: 1em;
-  -webkit-margin-after: 1em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-}
-
-.header {
-  max-width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  width: 100%;
-  top: 0;
-  position: absolute;
-  background: rgb(0, 224, 213);
-  background: rgba(0, 224, 213, 0.4);
-}
-
-.logoBlock {
-  width: 600px;
-  height: 100%;
-  position: absolute;
-  margin-left: 145px;
-}
-
-.logoContainer {
-  max-width: 500px;
-  height: 100%;
-  width: 90%;
-  margin: 0 auto;
-}
-
-.logo {
+a {
   color: #fff;
-  margin-top: 120px;
-  font-size: 235px;
-  letter-spacing: 8px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f46853;
+  text-decoration: none;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+#slideshow {
+  width: 100vw;
+}
+
+#greenScreen {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: rgba(0, 224, 213, 0.4); 
+}
+
+#logo {
+  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-size: 275px;
+  color: #fff;
+  height: 40%;
+  font-weight: lighter;
+  margin-top: 4%;
   opacity: 0;
+  letter-spacing: 4px;
   -moz-animation: fadein 2.25s ease-in 1.25s forwards; 
   -webkit-animation: fadein 2.25s ease-in 1.25s forwards; 
   -o-animation: fadein 2.25s ease-in 1.25s forwards; 
   animation: fadein 2.25s ease-in 1.25s forwards;
 }
 
-.logoBody {
-  max-width: 793px;
-  font-size: 28px;
+.subTitle {
+  text-align: left;
+  margin-left: 14.8%;
+  font-family: Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #fff;
-  margin-top: -50px;
-  margin-left: 16px;
-  letter-spacing: 3px !important;
+  font-size: 30px;
   opacity: 0;
+  letter-spacing: 3px;
   -moz-animation: fadein .5s ease-in 3s forwards; 
   -webkit-animation: fadein .5s ease-in 3s forwards; 
   -o-animation: fadein .5s ease-in 3s forwards;
   animation: fadein .5s ease-in 3s forwards;
 }
 
-a {
-  text-decoration: none;
-  cursor: pointer;
-  color: #fff;
-}
-
-a:hover {
-  color: #F56954;
-  -moz-transition-duration: .33s;
-  -moz-transition-property: background, color, opacity;
-  -ms-transition-duration: .33s;
-  -ms-transition-property: background, color, opacity;
-  -webkit-transition-duration: .33s;
-  -webkit-transition-property: background, color, opacity;
-  transition-duration: .33s;
-  transition-property: background, color, opacity;
-}
-
-span {
-  color: #fff;
-  margin-right: 5px;
-  margin-left: 5px;
+#appLinks {
+  font-family: Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 30px;
-}
-
-.nav {
-  float: left;
-  margin-left: -10px;
-}
-
-.nav li {
-  list-style: none;
-  font-size: 25px;
-  letter-spacing: 3px;
-  margin-top: 25px;
+  color: #fff;
+  padding: 2%;
+  margin-left: 1%;
   opacity: 0;
-  -moz-animation: fadein 1s ease-in 3s forwards; 
-  -webkit-animation: fadein 1.5s ease-in 3s forwards; 
-  -o-animation: fadein 1s ease-in 3s forwards; 
-  animation: fadein 1s ease-in 3s forwards;
+  letter-spacing: 3px;
+  width: 50%;
+  -moz-animation: fadein .5s ease-in 3.5s forwards; 
+  -webkit-animation: fadein .5s ease-in 3.5s forwards; 
+  -o-animation: fadein .5s ease-in 3.5s forwards; 
+  animation: fadein .5s ease-in 3.5s forwards;
 }
 
-.cycle-slideshow, img.slide {
-  background-size: cover;
-  position: relative;
-  height: 100%;
-  width:100%;
-  left: 0;
-  z-index:-9999;
+#socialNav {
+  margin-right: 3%;
+  margin-top: 2%;
+  float: right;
 }
 
-.titleText {
-  font-size: 80px;
-  line-height: 1;
+#socialLinks {
+  list-style: none;
+  font-size: 35px;
+  text-align: right;
 }
 
-.bodyText {
-  font-family: 'Frutiger Std LT';
-  letter-spacing: -0.2px;
-}
-
-.noPaperSection {
-  overflow: hidden;
-  background-color: #F56954;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  color: #fefefe;
-  height: 1400px;
-}
-
-.noPaperSectionContainer {
-  max-width: 1200px;
-  height: 100%;
-  width: 90%;
-  margin: 0 auto;
-  position: relative;
-}
-
-.titleImg01 {
-  background: url('/iWerkt-master/css/img/homeViewHorizontale.png') no-repeat;
-  background-size: contain;
-  background-position: center bottom;
-  width: 631px;
-  height: 1084px;
-  position: absolute;
-  bottom: 0;
-  margin: 0 100px 90px 0;
-  right: 0;
-}
-
-.titleImg02 {
-  background: url('/iWerkt-master/css/img/calendarViewBlackPhone.png') no-repeat;
-  background-position: center bottom;
-  background-size: contain;
-  width: 631px;
-  height: 746px;
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 80px;
-  left: 50%;
-  margin-left: -450px;
-}
-
-#noPaperSectionTitle {
-  opacity: 1;
-  margin-top: 110px;
-  text-align: center; 
-}
-
-.noPaperSectionBody {
-  max-width: 793px;
-  font-size: 26px;
-  line-height: 1.5;
-  color: #ffffff;
-  text-align: center;
-  margin: auto;
-  margin-top: 36px;
-  opacity: 0.8;
-}
-
-.keepTrackSection {
-  overflow: hidden;
-  background-color: #4CC0BD;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  height: 1150px;
-}
-
-.keepTrackSectionContainer {
-  max-width: 1200px;
-  height: 100%;
-  width: 90%;
-  margin: 0 auto;
-  position: relative;
-}
-
-#keepTrackSectionTitle {
-  opacity: 1;
-  margin-top: 110px;
-  text-align: center; 
-  color: #fff;
-}
-
-.keepTrackSectionBody {
-  max-width: 772px;
-  font-size: 26px;
-  line-height: 1.5;
-  color: #fff;
-  text-align: center;
-  margin: auto;
-  margin-top: 34px;
-}
-
-.keepTrackImgContainer {
-  height: 700px;
-  max-width: 100%;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  background-color: #4CC0BD;
-  margin-top: 15px
-}
-
-.keepTrackImgs {
-  display: inline-block !important;
-  margin-left: 50px;
+#socialLinks li {
+  margin-left: 3vw;
   float: left;
-  margin-top: 75px;
+  opacity: 0;
+  -moz-animation: fadein .5s ease-in 3.5s forwards; 
+  -webkit-animation: fadein .5s ease-in 3.5s forwards; 
+  -o-animation: fadein .5s ease-in 3.5s forwards; 
+  animation: fadein .5s ease-in 3.5s forwards;
 }
 
-#keepTrackImg01 {
-  background: url('/iWerkt-master/css/img/homeViewHorizontalePullOut.png') no-repeat;
-  background-size: contain;
-  margin-left: 50px;
-  width: 304px;
-  height: 540px;
+.title {
+  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 80px;
+  color: #fff;
+  width: 100vw;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.content {
+  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  color: #fff;
+  text-align: center;
+}
+
+.text {
+  margin-top: 4%;
+}
+
+/*------NO PAPER SECTION-------*/
+
+.noPaperContainer {
   position: relative;
-  moz-box-shadow: 5px 5px 8px 43px rgba(0,0,0,0.4);
+  width: 100vw;
+  height: 100%;
+  background: #f46853;
+}
+
+#noPaperContent {
+  width: 85vw;
+  margin: 2% auto;
+  line-height: 1.5;
+}
+
+.screenShots {
+  margin-top: -5%;
+}
+
+#noPaperImg01 {
+  margin-left: 35%;
+  margin-bottom: -60%;
+}
+
+#noPaperImg02 {
+  margin-left: 12%; 
+  margin-bottom: -1.3%;
+}
+
+/*------KEEP TRACK SECTION-------*/
+
+.keepTrackContainer {
+  position: relative;
+  height: 100%;
+  width: 100vw;
+  background-color: #4CC0BD;
+}
+
+#keepTrackContent {
+  width: 60vw;
+  margin: 2% auto 0 auto;
+  line-height: 1.5;
+}
+
+#keepTrackTitle {
+  padding-top: 8%;
+}
+
+#keepTrackImgContainer {
+  position: relative;
+  clear: both;
+  float: left;
+  height: 100%;
+  width: 100vw;
+  padding-bottom: 8%;
+  background-color: #4CC0BD;
+}
+
+#keepTrackImg {
+  color: #fff;
+  float: left;
+  margin-top: 6%;
+  margin-left: 4%;
+  width: 28%;
+  line-height: 0;
+  position: relative;
+  -moz-box-shadow: 5px 5px 8px 43px rgba(0,0,0,0.4);
   -webkit-box-shadow: 5px 8px 43px 5px rgba(0,0,0,0.4);
   box-shadow: 5px 8px 43px 5px rgba(0,0,0,0.4);
 }
 
-#keepTrackImg02 {
-  background: url('/iWerkt-master/css/img/voucherView.png') no-repeat;
-  background-size: contain;
-  position: relative;
-  width: 304px;
-  height: 540px;
-  moz-box-shadow: 5px 5px 8px 43px rgba(0,0,0,0.4);
-  -webkit-box-shadow: 5px 8px 43px 5px rgba(0,0,0,0.4);
-  box-shadow: 5px 8px 43px 5px rgba(0,0,0,0.4);
+#keepTrackImg img {
+  width: 100%;
 }
 
-#keepTrackImg03 {
-  background: url('/iWerkt-master/css/img/timePickerView.png') no-repeat;
-  background-size: contain;
+/*-------------GET PAID SECTION--------------*/
+#getPaidContainer {
   position: relative;
-  width: 304px;
-  height: 540px;
-  moz-box-shadow: 5px 5px 8px 43px rgba(0,0,0,0.4);
-  -webkit-box-shadow: 5px 8px 43px 5px rgba(0,0,0,0.4);
-  box-shadow: 5px 8px 43px 5px rgba(0,0,0,0.4);
-}
-
-.getPaidSection {
-  overflow: hidden;
+  float: left;
+  height: 100%;
+  width: 100vw;
   background-color: #1399C9;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  height: 1085px;
-  color: #fefefe;
 }
 
-.getPaidSectionContainer {
-  height: 100%;
-  max-width: 1200px;
-  width: 90%;
-  margin: 0 auto;
+.contentContainer {
   position: relative;
-}
-
-.getPaidImg01 {
-  background: url('/iWerkt-master/css/img/loginView.png') no-repeat;
-  background-size: contain;
-  width: 631px;
-  height: 1084px;
-  position: absolute;
-  float: left;
-}
-
-.getPaidSectionBlock {
-  text-align: left;
-  width: 456px;
   height: 100%;
-  position: absolute;
-  right: 0;
-  margin: 110px 0 0 0;
+  width: 50%;
+  margin-top: 12%;
+  float: right;
 }
 
-#getPaidSectionTitle {
-  opacity: 1;
-  font-size: 80px;
-  color: #fff;
+#getPaidTitle {
+  clear: both;
+  width: 50%;
+  float: left;
+  text-align: left;
+  margin-top: 4%;
+  margin-left: 2%;
+  margin-bottom: 2%;
 }
 
-.getPaidSectionBody {
-  max-width: 793px;
-  opacity: 0.8;
-  font-size: 26px;
-  line-height: 1.2;
-  color: #ffffff;
-  margin-top: 50px;
+#getPaidContent {
+  position: relative;
+  text-align: left;
+  width: 40%;
+  margin-left: 3%;
+}
+
+#text {
+  position: relative;
+  margin-top: 25%;
+  width: 45vw;
   text-align: justify;
 }
 
-.getAppSection {
-  overflow: hidden;
-  background-color: #00c0ce;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  height: 625px;
+#getPaidImg {
+  margin-top: 1%;
+  width: 50%;
   position: relative;
-}
-
-.getAppSectionContainer {
-  width: 90%;
-  margin: 0 5%;
-}
-
-#getAppSectionTitle {
-  font-size: 100px;
-  color: #fff;
-  text-align: center;
-  width: 90%;
-  margin: 110px auto 0 auto;
-}
-
-.getAppSectionBody {
-  width: 100%;
-  opacity: 0.8;
-  font-size: 26px;
-  line-height: 1.2;
-  color: #fff;
-  text-align: center;
-}
-
-.getAppLinksLarge {
-  max-width: 795px;
-  margin: 100px auto 0 auto;
-}
-
-.getAppIconsLarge {
-  width: 220px;
-  margin: 100px auto 0 auto;
-  text-align: center;
-  display: block;
-}
-
-.iosAppIconLarge {
-  background: url('/iWerkt-master/css/img/appStore.png') no-repeat;
-  background-size: contain;
-  width: 220px;
-  height: 80px;
-  display: block;
-}
-
-.androidAppIconLarge {
-  background: url('/iWerkt-master/css/img/gPlay.png') no-repeat;
-  background-size: contain;
-  width: 220px;
-  height: 80px;
-  display: block;
-  margin-top: 30px;
-}
-
-.footer {
-  height: 100px;
-  max-width: 100%;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  background-color: #F56954;
-}
-
-.leftSide {
-  width: 46%;
-  position: relative;
-  padding-right: 2%;
-  padding-left: 2%;
-  margin-top: 40px;
   float: left;
 }
 
-.copyright {
-  font-size: 18px;
-  text-align: left;
+#getPaidImg img {
+  width: 100%;
+  height: 100%;
 }
 
-.copyright a:hover {
+/*--------------GET THE APP SECTION-------------*/
+
+.getAppContainer {
+  position: relative;
+  background-color: #00c0ce;
+  width: 100vw;
+  height: 100%;
+  clear: both;
+  float: left;
+}
+
+#getAppTitle {
+  margin-top: 2%;
+}
+
+#getAppContent {
+  width: 100%;
+  font-size: 26px;
+  text-align: center;
+}
+
+#getAppContent p {
+  opacity: 0.8;
+}
+
+.getAppIconsLarge {
+  position: relative;
+  width: 100%;
+  margin: 5% auto;
+  text-align: center;
+}
+
+#iosAppIconL img {
+  width: 25%;
+}
+
+#androidAppIconL img {
+  width: 28.5%;
+}
+
+/*-----------FOOTER------------*/
+
+.footer {
+  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+  height: 100%;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #F56954;
+  font-size: 18px;
+  position: relative;
+}
+
+.leftSide {
+  width: 50%;
+  margin: 3% 0 3% 0;
+  float: left;
+}
+
+#copyright {
+  width: 100%;
+  float: left;
+  font-size: 10px;
+  position: absolute;
+  margin-top: 6%;
+  margin-left: 1%;
+  opacity: 0.6;
+}
+
+#copyright a:hover {
   border-top: none !important;
   color: #00c0ce !important;
 }
 
 .rightSide {
-  margin-top: 40px;
+  margin: 3% 4% 3% 0;
   float: right;
   text-align: right;
   overflow: hidden; 
-  padding-left: 2%;
-  padding-right: 2%;
-  position: relative;
-  width: 46%;
+  width: 40%;
 }
 
 .footerLink {
   display: inline-block;
-  font-size: 18px;
-  margin-left: 28px;
+  margin-left: 7%;
   vertical-align: top;
   text-align: right;
 }
 
 #obf {
   display: inline-block;
-  font-size: 18px;
-  margin-left: 28px;
+  margin-left: 5%;
   vertical-align: top;
   text-align: right;
 }
@@ -493,13 +399,14 @@ span {
   color: #00c0ce !important;
 }
 
-.footerLink a.activePage {
-  color: #00BC5B !important;
+.icon {
+  font-size: 22px;
 }
 
-/*--PRIVACY PAGE---------------------------------*/
+/*--------PRIVACY PAGE----------*/
 
 .privacyHeader {
+  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
   height: 100px;
   max-width: 100%;
   width: 100%;
@@ -518,6 +425,7 @@ span {
 }
 
 .logoSmall {
+  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
   font-size: 36px;
   text-align: left;
   margin-top: 30px;
@@ -553,6 +461,7 @@ span {
 }
 
 .privacySection {
+  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
   overflow: hidden;
   width: 100%;
   margin: 0;
@@ -572,6 +481,7 @@ span {
 }
 
 #privacySectionTitle {
+  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
   opacity: 1;
   margin-top: 80px;
   text-align: center; 
@@ -580,6 +490,7 @@ span {
 }
 
 #privacySectionDate {
+  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
   text-align: center;
   opacity: 1;
   line-height: 20px; 
@@ -588,12 +499,14 @@ span {
 }
 
 hr {
+  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
   display: block;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .privacySectionBody {
+  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
   max-width: 875px;
   font-size: 18px;
   line-height: 1.5;
@@ -608,6 +521,7 @@ hr {
 /*--TERMS PAGE---------------------------------*/
 
 .termsHeader {
+  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
   height: 100px;
   max-width: 100%;
   width: 100%;
@@ -626,6 +540,7 @@ hr {
 }
 
 .logoSmall {
+  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
   font-size: 36px;
   text-align: left;
   margin-top: 30px;
@@ -661,6 +576,7 @@ hr {
 }
 
 .termsSection {
+  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
   overflow: hidden;
   width: 100%;
   margin: 0;
@@ -680,6 +596,7 @@ hr {
 }
 
 #termsSectionTitle {
+  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
   opacity: 1;
   margin-top: 80px;
   text-align: center; 
@@ -688,6 +605,7 @@ hr {
 }
 
 #termsSectionDate {
+  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
   text-align: center;
   opacity: 1;
   line-height: 20px; 
@@ -703,6 +621,7 @@ hr {
 }
 
 .termsSectionBody {
+  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
   max-width: 875px;
   font-size: 18px;
   line-height: 1.5;
@@ -713,153 +632,280 @@ hr {
   opacity: 0.8;
 }
 
+/*-----------------FAQ-----------------------*/
 
-  /*-----------------FAQ-----------------------*/
 
-.homeLogo {
-  font-size: 36px;
-  text-align: left;
-  letter-spacing: 3px;
-  background-color: #F56954;
-  padding: 2% 0 0 2%;
+/*-----------------RESPONSIVENESS----------------*/
+
+
+/*------VARIABLES-----------*/
+
+@media screen and (max-width: 320px) {
+  .content {
+    font-size: 15px;
+    text-align: center;
+  }
+  .title {
+    font-size: 50px;
+  }
 }
 
-.homeLogo a:hover {
-  color: #00c0ef !important;
+/*---------HOME------------*/
+
+
+@media screen and (max-width: 320px) {
+  #logo {
+    font-size: 80px;
+    margin-top: 25%;
+    height: 22%;
+  }
+  .subTitle {
+    width: 100%;
+    margin-left: 0;
+    font-weight: bolder;
+    font-size: 14px;
+    text-align: center;
+    margin-top: -10%;
+  }
+  #appLinks {
+    font-size: 14px;
+    padding: 5% 4% 4% 4%;
+  }
+  #socialNav {
+    margin-top: 4%;
+    margin-right: 6%;
+  }
+  #socialLinks {
+  font-size: 20px;
+  }
+  #socialLinks li {
+  margin-left: 4vw;
+  }
 }
 
-.faq {
-  overflow: hidden;
-  width: 100vw;
-  margin: 0;
-  padding: 0;
-  color: #fefefe;
-  position: relative;
-  background-color: #00bfbc;
+@media screen and (min-width: 321px) and (max-width: 667px) {
+  #logo {
+    font-size: 85px;
+    margin-top: 30%;
+    height: 15%;
+  }
+  .subTitle {
+    width: 80%;
+    margin: 0 auto;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    margin-top: -3%;
+    letter-spacing: 5px;
+  }
+  #appLinks {
+    font-size: 20px;
+    padding: 5% 4% 4% 4%;
+  }
+  #socialNav {
+    margin-top: 4%;
+    margin-right: 6%;
+  }
+  #socialLinks {
+    font-size: 28px;
+  }
+  #socialLinks li {
+    margin-left: 4vw;
+  }
+  .title {
+    padding-top: 12%;
+    font-size: 60px;
+  }
+  .content {
+    font-size: 21px;
+  }
+  .screenShots {
+
+    margin-top: -5%;
+  }
+  #noPaperImg01 {
+    margin-left: 35%;
+    margin-bottom: -60%;
+  }
+  #noPaperImg02 {
+    margin-left: 12%; 
+    margin-bottom: -1.3%;
+  } 
+  #noPaperImg01 img {
+    margin-left: 10%;
+    margin-bottom: -2%;
+    width: 70%;
+  }
+  #noPaperImg02 img {
+    margin-left: -1%;
+    margin-bottom: -2%;
+    width: 60%;
+  }
+  #keepTrackTitle {
+    font-size: 57px;
+  }
+  #keepTrackContent {
+    width: 90%;
+    padding-bottom: 2%;
+  }
+  #keepTrackImgContainer {
+    margin-top: -2%;
+    padding-bottom: 11%;
+  }
+  #getPaidTitle {
+    margin-top: -17%;
+    margin-left: 3%;
+  }
+  #getPaidContent {
+    float: left;
+    font-size: 20px;
+    margin-left: 4%;
+    margin-bottom: 17%;
+    width: 90%;
+  }
+  #text {
+    width: 100%;
+    margin-top: 10%;
+    text-align: left;
+    font-size: 20px;
+  }
+  #getPaidImg {
+    margin-top: 10%;
+    width: 50%;
+    position: relative;
+    float: left;
+  }
+  #getPaidImg img {
+    width: 110%;
+  }
+  #getAppTitle {
+    margin-top: -5%;
+  }
+  .footer {
+    font-size: 13px;
+    height: 100%;
+  }
+  #copyright {
+    display: none;
+  }
+  .leftSide {
+    width: 22%;
+    margin: 4% 0 3% 3%;
+  }
+  .rightSide {
+    width: 60%;
+    margin-top: 4%;
+    margin-right: 6%;
+  }
+  .footerLink {
+    margin-left: 5%;
+  }
+
 }
 
-.faqContainer {
-  max-width: 100vw;
-  margin: 0 auto;
-  position: relative;
+/*-------NO PAPER--------*/
+@media screen and (max-width: 320px) {
+  .noPaperContainer {
+    height: 100%;
+  }
+  #noPaperContent {
+    width: 75vw;
+  }
+  #noPaperImg01 img {
+    margin-left: 10%;
+    margin-bottom: -2%;
+    width: 70%;
+  }
+  #noPaperImg02 img {
+    margin-left: -1%;
+    margin-bottom: -2%;
+    width: 60%;
+  }
+  .title {
+    padding-top: 8%;
+  }
 }
 
-#faqTitle {
-  opacity: 1;
-  width: 100vw;
-  height: 12vh;
-  padding-top: .5%;
-  text-align: center; 
-  font-size: 50px !important;
-  letter-spacing: 4px;
-  background-color: #F56954;
+/*---------KEEP TRACK------------*/
+
+@media screen and (max-width: 320px) {
+  #keepTrackImgContainer {
+    padding-bottom: 12%;
+  }
 }
 
-.mostFAQs {
-  background-color: #45C0BE;
-  padding-bottom: 1%;
+/*---------GET PAID------------*/
+
+@media screen and (max-width: 320px) {
+  #getPaidContainer {
+    height: 100%;
+  }
+  #getPaidImg {
+    margin-top: 12%;
+  }
+  #getPaidTitle {
+    margin-top: -12%;
+    margin-left: 3%;
+  }
+  #getPaidContent {
+    float: left;
+    font-size: 14px;
+    margin-left: 4%;
+    margin-bottom: 17%;
+    width: 90%;
+  }
+  #text {
+    width: 100%;
+    margin-top: 10%;
+    text-align: left;
+    font-size: 14px;
+  }
 }
 
-.faqCatBox {
-  float: left;
-  margin: 0 0 1% 1%;
-  overflow: hidden;
-  position: relative;
-  width: 23.7vw;
-  height: 30vh;
-  background: #fff;
+/*---------GET THE APP------------*/
+
+@media screen and (max-width: 320px) {
+  .getAppContainer {
+    height: 50vh;
+  }
+  #getAppIconsLarge {
+    margin-top: 1%;
+  }
 }
 
-#faqCatBox:hover {
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition:.5s;
+/*---------FOOTER------------*/
+
+@media screen and (max-width: 320px) {
+  .footer {
+    font-size: 8px;
+    height: 100%;
+  }
+  #copyright {
+    display: none;
+  }
+  .leftSide {
+    margin-top: 4%;
+    margin-left: 3% 0 3% 3%;
+  }
+  .rightSide {
+    width: 43%;
+    margin-top: 4%;
+    margin-right: 4%;
+  }
+  .footerLink {
+    margin-left: 5%;
+  }
 }
 
-#faqCat {
-  color: #00c0ef;
-  margin: 33% auto;
-  font-size: 25px;
-  opacity: 1;
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  line-height: 2%;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition:.5s;
-}
 
-#faqCat:hover {
-  color: #F56954;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition:.5s;
-}
 
-.moreHelp {
-  width: 100vw;
-  height: 9vh;
-  text-align: center;
-  background-color: #45C0BE;
-  float: left;
-  line-height: 1vh;
-  margin-top: -.5%;
-}
 
-.moreHelp p {
-  color: rgba(255, 255, 255, 0.6);
-}
 
-#mainCategoriesContainer {
-  background-color: #00bfbc;
-}
 
-#mostFAQsTitle {
-  font-size: 35px;
-  height: 5vh;
-  width: 100vw;
-  margin: 0 1% 3% 1%;
-  padding-top: 3%;
-  color: #fff;
-}
 
-.faqButton {
-  background: #1399C9;
-  border-radius: 20px;
-  box-sizing: border-box;
-  color: #fff;
-  font-size: 18px;
-  line-height: 1.4;
-  padding: 6px 14px;
-}
 
-#faqButtonList {
-  list-style: none;
-  display: inline-block;
-  margin: 0 auto;
-  width: 100%;
-}
 
-#faqButtonList li {
-  float: left;
-  margin-bottom: 2%;
-  margin-right: 1%;
-}
 
-#faqCatTitle {
-  font-size: 35px;
-  height: 5vh;
-  width: 100vw;
-  margin: 3% 1%;
-  color: #fff;
-}
 
 
 

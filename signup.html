@@ -121,31 +121,111 @@ ul {
   color: #45c0be !important;
 }
 
+.footer {
+  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+  height: 100%;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #F56954;
+  font-size: 18px;
+  position: relative;
+}
+
+.leftSide {
+  width: 50%;
+  margin: 3% 0 3% 0;
+  float: left;
+}
+
+#copyright {
+  width: 100%;
+  float: left;
+  font-size: 10px;
+  position: absolute;
+  margin-top: 6%;
+  margin-left: 1%;
+  opacity: 0.6;
+}
+
+#copyright a:hover {
+  border-top: none !important;
+  color: #00c0ce !important;
+}
+
+.rightSide {
+  margin: 3% 4% 3% 0;
+  float: right;
+  text-align: right;
+  overflow: hidden; 
+  width: 40%;
+}
+
+.footerLink {
+  display: inline-block;
+  margin-left: 7%;
+  vertical-align: top;
+  text-align: right;
+}
+
+#obf {
+  display: inline-block;
+  margin-left: 5%;
+  vertical-align: top;
+  text-align: right;
+}
+
+.footerLink a:hover {
+  color: #00c0ce !important;
+}
+
+.footerLink a.activePage {
+  color: #00BC5B !important;
+}
+
+.icon {
+  font-size: 22px;
+}
+
+
   </style>
   <body>
   
     <div class='homeLogo'><a href='/'>iWERKT</a></div>
     <div id='faqTitle'>SIGNUP</div>
-     <div class='generalContainer'> 
-      <ul>
-        <li><p class='question'>HOW DO I SIGN UP?</p></li>
-        <li><p class='answer tab'>It's easy! Just install the app onto your phone (or other mobile device) via the <a href='https://itunes.apple.com/us/app/iwerkt/id1097698969?mt=8' class='storeLinks'>AppStore</a> for iPhone, or <a href='https://play.google.com/store/apps/details?id=com.ivymdl.iwerkt&hl=en_GB' class='storeLinks'>GooglePlay</a> for Android users. Then click SIGNUP! We just need your name, email address, agency, a password, and a photo.</p></li>
-      </ul> 
-      <ul>
-        <li><p class='question'>WHAT IS MY USERNAME?</p></li>
-        <li><p class='answer tab'>Your username is the email address you used to sign up.</p></li>
-      </ul>
-      <ul>
-        <li><p class='question'>WHAT IF I FORGOT MY PASSWORD? Gaaaahhhh!</p></li>
-        <li><p class='answer tab'>No problem! Click on the Question Mark (?) on the LOGIN screen, then enter your email address. We'll send you your password ASAP.</p></li>
-      </ul>
-      <ul>
-        <li><p class='question'>DO I HAVE TO ADD A PHOTO TO COMPLETE THE SIGNUP PROCESS?</p></li>
-        <li><p class='answer tab'>With models as our users, we thought it was very likely that they have beautiful photos. Your photo becomes the backdrop for your homescreen. You are not required to choose a photo for this, but if you leave it blank you'll only see a gray background - and that seems just so, so sad...</p></li>
-      </ul>
-      
-    </div>
-    <div class='backButton'><a href='faq.html'><i class="fa fa-chevron-circle-left" aria-hidden="true"></i><p id='backText'>Back to FAQ</p></a></div>
+      <div class='generalContainer'> 
+        <ul>
+          <li><p class='question'>HOW DO I SIGN UP?</p></li>
+          <li><p class='answer tab'>It's easy! Just install the app onto your phone (or other mobile device) via the <a href='https://itunes.apple.com/us/app/iwerkt/id1097698969?mt=8' class='storeLinks'>AppStore</a> for iPhone, or <a href='https://play.google.com/store/apps/details?id=com.ivymdl.iwerkt&hl=en_GB' class='storeLinks'>GooglePlay</a> for Android users. Then click SIGNUP! We just need your name, email address, agency, a password, and a photo.</p></li>
+        </ul> 
+        <ul>
+          <li><p class='question'>WHAT IS MY USERNAME?</p></li>
+          <li><p class='answer tab'>Your username is the email address you used to sign up.</p></li>
+        </ul>
+        <ul>
+          <li><p class='question'>WHAT IF I FORGOT MY PASSWORD? Gaaaahhhh!</p></li>
+          <li><p class='answer tab'>No problem! Click on the Question Mark (?) on the LOGIN screen, then enter your email address. We'll send you your password ASAP.</p></li>
+        </ul>
+        <ul>
+          <li><p class='question'>DO I HAVE TO ADD A PHOTO TO COMPLETE THE SIGNUP PROCESS?</p></li>
+          <li><p class='answer tab'>With models as our users, we thought it was very likely that they have beautiful photos. Your photo becomes the backdrop for your homescreen. You are not required to choose a photo for this, but if you leave it blank you'll only see a gray background - and that seems just so, so sad...</p></li>
+        </ul>
+      </div>
+      <div class='backButton'><a href='faq.html'><i class="fa fa-chevron-circle-left" aria-hidden="true"></i><p id='backText'>Back to FAQ</p></a>
+      </div>
+      <div class='footer'>
+        <span id='copyright'><a href='#'>&copy NordikLabs 2016</a></span>
+        <div class='leftSide'>
+          <span class='footerLink'><a href='/privacy.html'>Privacy</a></span>
+          <span class='footerLink'><a href='/terms.html'>Terms</a></span>
+        </div>   
+        <div class='rightSide'>     
+          <span class='footerLink'><a href='/faq.html'>Need Help?</a></span> 
+          <span class='footerLink'><a href='mailto:&#105;&#110;&#102;&#111;&#64;&#105;&#119;&#101;&#114;&#107;&#116;&#46;&#99;&#111;&#109'>Contact</a></span>
+          <span class='footerLink'><a href='https://www.facebook.com/iwerkt/'><i class='fa fa-facebook icon'></i></a></span>
+          <span class='footerLink'><a href='https://twitter.com/iwerkt'><i class='fa fa-twitter icon'></i></a></span>
+          <span class='footerLink'><a href='https://www.instagram.com/iwerkt/?hl=en'><i class='fa fa-instagram icon'></i></a></span>
+        </div>
+      </div>
       
   </body>
 </html>
