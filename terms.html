@@ -4,27 +4,163 @@
 
       <title>terms</title>
 
-      <link rel='stylesheet' type='text/css' href='/iWerkt-master/css/styles.css'>
       <link rel="stylesheet" href='/iWerkt-master/css/font-awesome-4.6.3/css/font-awesome.min.css'>
       <script src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
       
   </head>
+  <style>
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+} 
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f46853;
+  text-decoration: none;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+.termsContainer {
+  overflow: hidden;
+  width: 100vw;
+  padding-bottom: 4%;
+  position: relative;
+  background-color: #80CDC9;
+
+}
+
+.header {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  background-color: #1399C9;
+  padding-bottom: 3%;
+
+}
+
+.logo img {
+  float: left;
+  margin: 2% 0 0 6%;
+  width: 10%;
+}
+
+.logo a:hover {
+  color: #00c0ef !important;
+}
+
+.title {
+  float: right;
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  margin-top: 4%;
+  margin-right: 33%;
+}
+
+#date {
+  position: absolute;
+  margin-top: 12%;
+  color: #fff;
+  opacity: 0.8;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.termsBody {
+  width: 75%;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #fff;
+  text-align: justify;
+  margin: auto;
+  margin-top: 50px;
+  opacity: 0.8;
+}
+
+.footer {
+  height: 100%;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #F56954;
+  font-size: 18px;
+  position: relative;
+}
+
+.leftSide {
+  width: 50%;
+  margin: 3% 0 3% 0;
+  float: left;
+}
+
+#copyright {
+  width: 100%;
+  float: left;
+  font-size: 10px;
+  position: absolute;
+  margin-top: 6%;
+  margin-left: 1%;
+  opacity: 0.6;
+}
+
+#copyright a:hover {
+  border-top: none !important;
+  color: #00c0ce !important;
+}
+
+.rightSide {
+  margin: 3% 4% 3% 0;
+  float: right;
+  text-align: right;
+  overflow: hidden; 
+  width: 40%;
+}
+
+.footerLink {
+  display: inline-block;
+  margin-left: 7%;
+  vertical-align: top;
+  text-align: right;
+}
+
+#obf {
+  display: inline-block;
+  margin-left: 5%;
+  vertical-align: top;
+  text-align: right;
+}
+
+.footerLink a:hover {
+  color: #00c0ce !important;
+}
+
+.footerLink a.activePage {
+  color: #00c0ce !important;
+}
+
+.icon {
+  font-size: 22px;
+}
+
+  </style>
   <body>
     
-  	<div class='termsHeader'>
-  		<div class='termsHeaderLeft'>
-  			<div class='logoSmall'><a href='/'>iWERKT</a></div>
-  		</div>
-  		<div class='termsHeaderRight'>
-  			
-  		</div>
-  	</div>
-    <div class='termsSection'>
-      <div class='termsSectionContainer'>
-        <div class='titleText' id='termsSectionTitle'>Terms of Use</div>
-        <p class='subtitleText' id='termsSectionDate'>Last Modified: June 28, 2016</p>
-        <hr>
-        <p class='termsSectionBody' id='bodyText'>
+    <div class='termsContainer'>
+      <div class='header'>
+        <a class='logo' href='/'><img src='/iWerkt-master/css/img/iWerktLogo.jpg'></a>
+        <div class='title'>Terms of Use</div>
+        <p id='date'>Last Modified: June 28, 2016</p>
+      </div>
+        <p class='termsBody'>
           <b>ACCEPTANCE OF THE TERMS OF USE</b>
           <br>
           Welcome to the website/app of iWerkt, Inc. ("<b>Company</b>", "<b>we</b>" or "<b>us</b>"). The following terms and conditions, together with any documents they expressly incorporate by reference (collectively, these "<b>Terms of Use</b>"), govern your access to and use of <b><a href='/'>www.iwerkt.com</a></b>, including any content, functionality and services offered on or through <b><a href='http://www.iwerkt.com'>www.iwerkt.com</a></b> (the "<b>Website</b>"), and/or <b>iWerkt</b> application (the "<b>APP</b>"), whether as a guest or a registered user.
@@ -289,7 +425,7 @@
       <span id='copyright'><a href='#'>&copy NordikLabs 2016</a></span>
       <div class='leftSide'>
         <span class='footerLink'><a href='/privacy.html'>Privacy</a></span>
-        <span class='footerLink'><a href='/terms.html'>Terms</a></span>
+        <span class='footerLink'><a href='/terms.html' class='activePage'>Terms</a></span>
       </div>   
       <div class='rightSide'>     
         <span class='footerLink'><a href='/faq.html'>Need Help?</a></span> 
