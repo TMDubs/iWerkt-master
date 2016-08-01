@@ -21,8 +21,8 @@
     <div class='home' id='greenScreen'>
       <div id='socialNav'>
         <ul id='socialLinks'>
-        <li class='social'><a href='https://www.facebook.com/iwerkt/'><i class='fa fa-facebook'></i></a></li>
-        <li class='social'><a href='https://twitter.com/iwerkt'><i class='fa fa-twitter'></i></a></li>
+        <li class='social'><a href='https://www.facebook.com/iwerkt/'><i class='fa fa-facebook-square'></i></a></li>
+        <li class='social'><a href='https://twitter.com/iwerkt'><i class='fa fa-twitter-square'></i></a></li>
         <li class='social'><a href='https://www.instagram.com/iwerkt/?hl=en'><i class='fa fa-instagram'></i></a></li>
       </ul>
       </div>
@@ -88,20 +88,23 @@
       </div>  
     </div>
     
-    <div class='footer'>
-      <span id='copyright'><a href='#'>&copy NordikLabs 2016</a></span>
-      <div class='leftSide'>
-        <span class='footerLink'><a href='/privacy.html'>Privacy</a></span>
-        <span class='footerLink'><a href='/terms.html'>Terms</a></span>
-      </div>   
-      <div class='rightSide'>     
-        <span class='footerLink'><a href='/faq.html'>Need Help?</a></span> 
-        <span class='footerLink'><a href='mailto:&#105;&#110;&#102;&#111;&#64;&#105;&#119;&#101;&#114;&#107;&#116;&#46;&#99;&#111;&#109'>Contact</a></span>
-        <span class='footerLink'><a href='https://www.facebook.com/iwerkt/'><i class='fa fa-facebook icon'></i></a></span>
-        <span class='footerLink'><a href='https://twitter.com/iwerkt'><i class='fa fa-twitter icon'></i></a></span>
-        <span class='footerLink'><a href='https://www.instagram.com/iwerkt/?hl=en'><i class='fa fa-instagram icon'></i></a></span>
+      <div class='footer'>
+        <ul id='footerLeft'>
+          <li class='footerlink'><a href='/privacy.html'>Privacy</a></li>
+          <li class='footerlink'><a href='/terms.html'>Terms</a></li>
+        </ul>
+        <ul id='footerMid'>
+          <li class='footerlink icon'><a href='https://www.facebook.com/iwerkt/'><i class='fa fa-facebook-square'></i></a></li>
+          <li class='footerlink icon'><a href='https://twitter.com/iwerkt'><i class='fa fa-twitter-square'></i></a></li>
+          <li class='footerlink icon'><a href='https://twitter.com/iwerkt'><a href='https://www.instagram.com/iwerkt/?hl=en'><i class='fa fa-instagram'></i></a></li>
+        </ul>
+        <ul id='footerRight'>
+          <li class='footerlink'><a href='/faq.html'>Need Help?</a></li>
+          <li class='footerlink'><a href='mailto:&#105;&#110;&#102;&#111;&#64;&#105;&#119;&#101;&#114;&#107;&#116;&#46;&#99;&#111;&#109'>Contact</a></li>
+        </ul>
+        <div id='copyright'><a href='#'>&copy NordikLabs 2016</a></div>
       </div>
-    </div>
+ 
   
     <script type='text/javascript' id='slideshow'>
       $.backstretch(['/iWerkt-master/css/img/slideshow/01.jpg','/iWerkt-master/css/img/slideshow/02.jpg','/iWerkt-master/css/img/slideshow/03.jpg','/iWerkt-master/css/img/slideshow/04.jpg','/iWerkt-master/css/img/slideshow/05.jpg'], {duration: 3000, fade: 2000}

@@ -63,11 +63,11 @@ author: TMW
 a {
   color: #fff;
   text-decoration: none;
-}
-
-a:hover {
-  color: #f46853;
-  text-decoration: none;
+  -o-transition:.25s;
+  -ms-transition:.25s;
+  -moz-transition:.25s;
+  -webkit-transition:.25s;
+  transition:.25s;
 }
 
 body {
@@ -130,6 +130,11 @@ body {
   animation: fadein .5s ease-in 3.5s forwards;
 }
 
+#appLinks a:hover {
+  color: #f46853;
+  text-decoration: none;
+}
+
 #socialNav {
   margin-right: 3%;
   margin-top: 2%;
@@ -150,6 +155,11 @@ body {
   -webkit-animation: fadein .5s ease-in 3.5s forwards; 
   -o-animation: fadein .5s ease-in 3.5s forwards; 
   animation: fadein .5s ease-in 3.5s forwards;
+}
+
+#socialLinks a:hover {
+  color: #f46853;
+  text-decoration: none;
 }
 
 .title {
@@ -315,6 +325,10 @@ body {
   margin-top: 2%;
 }
 
+#getAppTitle a:hover {
+  color: #f46853;
+}
+
 #getAppContent {
   width: 100%;
   font-size: 26px;
@@ -349,179 +363,85 @@ body {
   overflow: hidden;
   background-color: #F56954;
   font-size: 18px;
+  font-weight: bolder;
   position: relative;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
-.leftSide {
-  width: 50%;
-  margin: 3% 0 3% 0;
+.footer ul {
+  list-style: none;
+}
+
+#footerLeft {
+  width: 30%;
+  text-align: left;
   float: left;
+  padding-left: 5%;
+}
+
+#footerLeft li {
+  display: inline-block;
+  margin-right: 18%;
+  margin-top: 3%;
+}
+
+#footerLeft a:hover {
+  color: #4CC0BD;
+}
+
+#footerMid {
+  width: 30%;
+  text-align: center;
+  float: left;
+}
+
+#footerMid li {
+  display: inline-block;
+}
+
+.icon {
+  margin-left: 6%;
+  margin-right: 6%;
+  font-size: 40px;
+}
+
+#footerMid a:hover {
+  color: #4CC0BD;
+}
+
+#footerRight{
+  width: 30%;
+  text-align: right;
+  float: left;
+  padding-right: 5%;
+}
+
+#footerRight li {
+  display: inline-block;
+  margin-left: 18%;
+  margin-top: 3%;
+}
+
+#footerRight a:hover {
+  color: #4CC0BD;
 }
 
 #copyright {
   width: 100%;
   float: left;
-  font-size: 10px;
+  font-size: 12px;
   position: absolute;
-  margin-top: 6%;
-  margin-left: 1%;
+  margin: 5% 0 0 1%;
   opacity: 0.6;
 }
 
 #copyright a:hover {
   border-top: none !important;
-  color: #00c0ce !important;
+  color: #4CC0BD;
 }
-
-.rightSide {
-  margin: 3% 4% 3% 0;
-  float: right;
-  text-align: right;
-  overflow: hidden; 
-  width: 40%;
-}
-
-.footerLink {
-  display: inline-block;
-  margin-left: 7%;
-  vertical-align: top;
-  text-align: right;
-}
-
-#obf {
-  display: inline-block;
-  margin-left: 5%;
-  vertical-align: top;
-  text-align: right;
-}
-
-.footerLink a:hover {
-  color: #00c0ce !important;
-}
-
-.icon {
-  font-size: 22px;
-}
-
-/*--TERMS PAGE---------------------------------*/
-
-.termsHeader {
-  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
-  height: 100px;
-  max-width: 100%;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  background-color: #00C0EF;
-  bottom: 0;
-}
-
-.termsHeaderLeft {
-  width: 46%;
-  position: relative;
-  padding-right: 2%;
-  padding-left: 2%;
-  float: left;
-}
-
-.logoSmall {
-  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
-  font-size: 36px;
-  text-align: left;
-  margin-top: 30px;
-  letter-spacing: 8px;
-}
-
-.logoSmall a:hover {
-  border-top: none !important;
-  color: #F56954 !important;
-}
-
-.termsHeaderRight {
-  float: right;
-  text-align: right;
-  overflow: hidden; 
-  padding-left: 2%;
-  padding-right: 2%;
-  margin-top: 32px;
-  position: relative;
-  width: 46%;
-}
-
-.headerLink {
-  margin-left: 20px;
-  display: inline-block;
-  font-size: 18px;
-  vertical-align: top;
-  text-align: right;
-}
-
-.headerLink a:hover {
-   color: #F56954 !important;
-}
-
-.termsSection {
-  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
-  overflow: hidden;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  color: #fefefe;
-  height: 10675px;
-  background-color: #1399C9;
-  position: relative;
-}
-
-.termsSectionContainer {
-  max-width: 1200px;
-  height: 100%;
-  width: 90%;
-  margin: 0 auto;
-  position: relative;
-}
-
-#termsSectionTitle {
-  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
-  opacity: 1;
-  margin-top: 80px;
-  text-align: center; 
-  font-size: 45px !important;
-  letter-spacing: 4px;
-}
-
-#termsSectionDate {
-  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
-  text-align: center;
-  opacity: 1;
-  line-height: 20px; 
-  font-size: 12px;
-  letter-spacing: 2.5px;
-  background-color: #1399C9 !important;
-}
-
-hr {
-  display: block;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.termsSectionBody {
-  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
-  max-width: 875px;
-  font-size: 18px;
-  line-height: 1.5;
-  color: #ffffff;
-  text-align: justify;
-  margin: auto;
-  margin-top: 50px;
-  opacity: 0.8;
-}
-
-/*-----------------FAQ-----------------------*/
-
 
 /*-----------------RESPONSIVENESS----------------*/
-
 
 /*------VARIABLES-----------*/
 
