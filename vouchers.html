@@ -8,71 +8,116 @@
   </head>
   <style>
 
-body {
+
+* {
   margin: 0;
   padding: 0;
-  font-family: "Frutiger LT Std", sans-serif;
-  font-weight: 100;
-  -webkit-font-smoothing: antialiased;
-  background-color: #45C0BE; /*was: #262e36*/
-}
+  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+} 
 
 a {
+  color: #fff;
   text-decoration: none;
-  cursor: pointer;
+}
+
+a:hover {
+  color: #f46853;
+  text-decoration: none;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+.mainContainer {
+  overflow: hidden;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  color: #fefefe;
+}
+
+ .header {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  background-color: #1399C9;
+  padding-bottom: 1.5%;
+ }
+
+.logo img {
+  position: relative;
+  float: left;
+  margin: 2.5% 0 0 6%;
+  width: 5%;
+}
+
+.logo a:hover {
+  color: #00c0ef !important;
+}
+
+.title {  
+  font-size: 55px;
   color: #fff;
-   -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition:.5s;
+  margin-top: 2.5%;
+  padding: 0.5% 2% 0% 3%;
+  border-left: solid rgba(255, 255, 255, 0.8);
+  width: 80vw;
+  margin-left: 17%;
 }
 
-.homeLogo {
-  font-size: 36px;
-  text-align: left;
-  letter-spacing: 3px;
-  padding: 2% 0 0 2%;
-}
-
-.homeLogo a:hover {
-  color: #F56954 !important;
-}
-
-#faqTitle {
-  padding: 1.5% 0.5%;
-  margin: 2% auto 0 auto;
-  width: 75vw;
-  font-size: 50px;
+#logoTitle {
+  margin-left: 4.4%;
   color: #fff;
-  text-align: center;
-  letter-spacing: 4px;
-  background-color: #F56954;
+  font-size: 28px;
+  letter-spacing: 2px;
 }
 
-.generalContainer {
-  width: 75vw;
-  background: #fff;
-  margin: 0 auto;
-  padding: 0.5%;
+.questionsContainer {
+  background-color: #80CDC9;
+  width: 65%;
+  border: 4px solid #4CC0BD;
+  margin: 5% auto 0 auto;
+  color: #fff;
+  padding-bottom: 1.5%;
+}
+
+#topBar {
+  padding: 1.5% 4%;
+  font-size: 40px;
+  background-color: #4CC0BD;
 }
 
 .question {
   font-size: 22px;
-  color: #00c0ef;
   text-align: left;
-  margin-bottom: 2px;
+  margin-bottom: 0.5%;
+  margin-top: 3.5%;
+  margin-left: 5.5%;
+  font-weight: bolder;
 }
 
 .answer {
-  font-size: 18px;
-  color: gray;
+  font-size: 19px;
+  color: #fff;
   text-align: left;
   margin-top: 2px;
 }
 
+.contentLink {
+  font-weight: bolder;
+  opacity: 0.9;
+  text-decoration: underline;
+}
+
 .tab {
-  margin-left: 30px;
+  margin-left: 8%;
+}
+
+.storeLinks {
+  opacity: 0.9;
+  font-weight: bolder !important;
+  text-decoration: underline !important;
 }
 
 ul {
@@ -83,6 +128,13 @@ ul {
 .backButton {
   width: 50vw;
   margin: 2% 12%;
+
+}
+
+.fa.back {
+  color: #1399C9;
+  margin-left: 10%;
+  margin-bottom: 8%;
 }
 
 .fa {
@@ -102,10 +154,10 @@ ul {
 }
 
 #backText {
-  font-size: 20px;
+  font-size: 19px;
   display: inline-block;
-  color: #fff;
-  line-height: 3px;
+  color: #1399C9;
+  margin-top: 1.5%;
 }
 
 #backText:hover {
@@ -115,10 +167,6 @@ ul {
   -moz-transition:.5s;
   -webkit-transition:.5s;
   transition:.5s;
-}
-
-.contactLink {
-  color: #45c0be !important;
 }
 
 .footer {
@@ -189,83 +237,88 @@ ul {
 
   </style>
   <body>
-
-    <div class='homeLogo'><a href='/'>iWERKT</a></div>
-    <div id='faqTitle'>VOUCHERS</div>
-     <div class='generalContainer'>  
-      <ul>
-        <li><p class='question'>HOW DO I CREATE A VOUCHER?</p></li>
-        <li><p class='answer tab'>It's easy! Just click on the ADD WORK/VOUCHER button on the bottom of the HOME SCREEN. Or, you can click the (+) PLUS sign in the WORK/VOUCHERS section. Select a JOB TYPE, PICK A CLIENT, click the (&#8594;) FORWARD ARROW, click the (+) PLUS sign to enter the DATE/TIME/RATE. Just add signatures and you're done - SIMPLE!</p></li>
-      </ul>
-      <ul>
-        <li><p class='question'>HOW DO I PICK THE DATE/TIME/RATE?</p></li>
-        <li><p class='answer tab'>On the second page of the voucher, click the (+) PLUS sign next to DATE/TIME/RATE and select your details. The rates you entered for your particular client will be listed and can be selected. However, if you need a different rate, you can create a CUSTOM RATE. Just be sure to click the (&#10003;) CHECKMARK when you're done!</p></li>
-      </ul>
-      <ul>
-        <li><p class='question'>HOW DO I CREATE A HALF-HOUR RATE?</p></li>
-        <li><p class='answer tab'>When creating a rate for a particular client, you can either select 1/2 HOUR as the time increment, or enter that rate manually on the voucher.</p></li>
-      </ul>
-      <ul>
-        <li><p class='question'>I SEE A POP-UP SAYING:<i style='color:#45c0be;'>"Please enter time/rate details properly."</i> WHAT DOES THAT MEAN?</p></li>
-        <li><p class='answer tab'>Double check that your info has been entered correctly and that the time doesn't say 0:00. If this persists, try entering the information exactly in the order the options are displayed on the screen (i.e. Left-to-Right: DATE/TIME/RATE). If you continue to have issues, be sure to <a href='mailto:&#105;&#110;&#102;&#111;&#64;&#105;&#119;&#101;&#114;&#107;&#116;&#46;&#99;&#111;&#109' class='contactLink'>contact us</a>.
-      </ul>
-      <ul>
-        <li><p class='question'>CAN I ENTER MORE THAN ONE DAY OF WORK ONTO A SINGLE VOUCHER?</p></li>
-        <li><p class='answer tab'>Yes, of course! You can enter any number of days on a voucher. Keep clicking the (+) PLUS sign and enter your additional work details.</p></li>
-      </ul>
-      <ul>
-        <li><p class='question'>CAN I INCLUDE EXPENSES IN A VOUCHER?</p></li>
-        <li><p class='answer tab'>Yes! Click on the (+) PLUS sign next to EXPENSES and enter the TYPE and AMOUNT. The TOTAL on the voucher will reflect your expenses.</p></li>
-      </ul>
-      <ul>
-        <li><p class='question'>What if I need a MODEL RELEASE FORM?</p></li>
-        <li><p class='answer tab'>Not a problem. The voucher contains a standard model release form.  Click the box for a RELEASE FORM and the form will appear with your agency, client, and type of job filled in. You will need to enter the period of time for which the release is applicable. If the box is checked (<b>&#x2611;</b>), the form will appear as the second page of the voucher.</p></li>
-      </ul>
-      <ul>
-        <li><p class='question'>THE SEND BUTTON DIDN'T WORK. WHAT NOW?</p></li>
-        <li><p class='answer tab'>If SEND is not activated, check that the NO VOUCHER EMAIL REQUIRED box is NOT checked. When it IS checked (<b>&#x2611;</b>), you can only SAVE, not SEND.</p></li>
-      </ul>
-      <ul>
-        <li><p class='question'>WHO RECEIVES EMAIL COPIES OF THE VOUCHER?</p></li>
-        <li><p class='answer tab'>iWERKT sends a copy of the voucher to your agency contact, your client contact, and the model's email. You have an opportunity to double-check the email addresses of the recipients BEFORE it sends. Great, eh?!</p></li>
-      </ul>
-      <ul>
-        <li><p class='question'>HOW DO I MAKE SURE MY AGENCY IS GETTING THE VOUCHER?</p></li>
-        <li><p class='answer tab'>After you have signed up, go to SETTINGS > MY AGENCIES. Click the EDIT button of your agency and make sure your AGENCY CONTACT's info is correct. When you hit SEND on a voucher, a pop-up appears before sending. This pop-up asks for confirmation of the CLIENT's EMAIL, the AGENCY's EMAIL, and YOURS as the user. You can always enter an email manually at this point as well. Good stuff to know!</p></li>
-      </ul>
-      <ul>
-        <li><p class='question'>WHAT IS THE VOUCHER'S FORMAT WHEN iWERKT SENDS THE EMAILS?</p></li>
-        <li><p class='answer tab'>iWERKT sends vouchers in PDF format. They can be saved and/or printed easily for processing and archiving.</p></li>
-      </ul>
-      <ul>
-        <li><p class='question'>HOW CAN I GET MY AGENCY'S LOGO PLACED ONTO THE TOP OF THE VOUCHER?</p></li>
-        <li><p class='answer tab'>We are happy to include any agency logo as long as you or they provide it to us. Otherwise, there is a standard photo we include as a place holder.</p></li>
-      </ul>
-      <ul>
-        <li><p class='question'>DOES iWERKT SAVE ALL OF MY SUBMITTED VOUCHERS?</p></li>
-        <li><p class='answer tab'>iWERKT keeps a record of all of your submitted vouchers, each organized by date. You can also go back and check-off a saved voucher, marking it as PAID once you've received payment for the booking(s).</p></li>
-      </ul>
-      <ul>
-        <li><p class='question'>WHAT IF I NEED TO RE-SEND A VOUCHER?</p></li>
-        <li><p class='answer tab'>If you find that the emails did not go through for some reason, shift or slide the specific voucher/work entry to the right - a SEND box will appear. You will be asked to confirm the email addresses again that you'd like to use for sending the voucher. If you continue to have issues, please feel free to <a href='mailto:&#105;&#110;&#102;&#111;&#64;&#105;&#119;&#101;&#114;&#107;&#116;&#46;&#99;&#111;&#109' class='contactLink'>contact us</a> for help!</li>
-      </ul>
-    </div>
-    <div class='backButton'><a href='faq.html'><i class="fa fa-chevron-circle-left" aria-hidden="true"></i><p id='backText'>Back to FAQ</p></a>
-    </div>
-    <div class='footer'>
-      <span id='copyright'><a href='#'>&copy NordikLabs 2016</a></span>
-      <div class='leftSide'>
-        <span class='footerLink'><a href='/privacy.html'>Privacy</a></span>
-        <span class='footerLink'><a href='/terms.html'>Terms</a></span>
-      </div>   
-      <div class='rightSide'>     
-        <span class='footerLink'><a href='/faq.html'>Need Help?</a></span> 
-        <span class='footerLink'><a href='mailto:&#105;&#110;&#102;&#111;&#64;&#105;&#119;&#101;&#114;&#107;&#116;&#46;&#99;&#111;&#109'>Contact</a></span>
-        <span class='footerLink'><a href='https://www.facebook.com/iwerkt/'><i class='fa fa-facebook icon'></i></a></span>
-        <span class='footerLink'><a href='https://twitter.com/iwerkt'><i class='fa fa-twitter icon'></i></a></span>
-        <span class='footerLink'><a href='https://www.instagram.com/iwerkt/?hl=en'><i class='fa fa-instagram icon'></i></a></span>
+    <div class='mainContainer'>
+      <div class='header'>
+        <a class='logo' href='/'><img src='/iWerkt-master/css/img/iWerktLogo.jpg'></a>
+        <div class='title'>Need Some Help?</div>
+       <div id='logoTitle'>iWERKT</div>
       </div>
-    </div>  
+      <div class="questionsContainer">
+        <div id='topBar'>Vouchers</div>
+        <ul>
+          <li><p class='question'>HOW DO I CREATE A VOUCHER?</p></li>
+          <li><p class='answer tab'>It's easy! Just click on the ADD WORK/VOUCHER button on the bottom of the HOME SCREEN. Or, you can click the (+) PLUS sign in the WORK/VOUCHERS section. Select a JOB TYPE, PICK A CLIENT, click the (&#8594;) FORWARD ARROW, click the (+) PLUS sign to enter the DATE/TIME/RATE. Just add signatures and you're done - SIMPLE!</p></li>
+        </ul>
+        <ul>
+          <li><p class='question'>HOW DO I PICK THE DATE/TIME/RATE?</p></li>
+          <li><p class='answer tab'>On the second page of the voucher, click the (+) PLUS sign next to DATE/TIME/RATE and select your details. The rates you entered for your particular client will be listed and can be selected. However, if you need a different rate, you can create a CUSTOM RATE. Just be sure to click the (&#10003;) CHECKMARK when you're done!</p></li>
+        </ul>
+        <ul>
+          <li><p class='question'>HOW DO I CREATE A HALF-HOUR RATE?</p></li>
+          <li><p class='answer tab'>When creating a rate for a particular client, you can either select 1/2 HOUR as the time increment, or enter that rate manually on the voucher.</p></li>
+        </ul>
+        <ul>
+          <li><p class='question'>I SEE A POP-UP SAYING:<i>"Please enter time/rate details properly."</i> WHAT DOES THAT MEAN?</p></li>
+          <li><p class='answer tab'>Double check that your info has been entered correctly and that the time doesn't say 0:00. If this persists, try entering the information exactly in the order the options are displayed on the screen (i.e. Left-to-Right: DATE/TIME/RATE). If you continue to have issues, be sure to <a href='mailto:&#105;&#110;&#102;&#111;&#64;&#105;&#119;&#101;&#114;&#107;&#116;&#46;&#99;&#111;&#109' class='contactLink'>contact us</a>.
+        </ul>
+        <ul>
+          <li><p class='question'>CAN I ENTER MORE THAN ONE DAY OF WORK ONTO A SINGLE VOUCHER?</p></li>
+          <li><p class='answer tab'>Yes, of course! You can enter any number of days on a voucher. Keep clicking the (+) PLUS sign and enter your additional work details.</p></li>
+        </ul>
+        <ul>
+          <li><p class='question'>CAN I INCLUDE EXPENSES IN A VOUCHER?</p></li>
+          <li><p class='answer tab'>Yes! Click on the (+) PLUS sign next to EXPENSES and enter the TYPE and AMOUNT. The TOTAL on the voucher will reflect your expenses.</p></li>
+        </ul>
+        <ul>
+          <li><p class='question'>What if I need a MODEL RELEASE FORM?</p></li>
+          <li><p class='answer tab'>Not a problem. The voucher contains a standard model release form.  Click the box for a RELEASE FORM and the form will appear with your agency, client, and type of job filled in. You will need to enter the period of time for which the release is applicable. If the box is checked (<b>&#x2611;</b>), the form will appear as the second page of the voucher.</p></li>
+        </ul>
+        <ul>
+          <li><p class='question'>THE SEND BUTTON DIDN'T WORK. WHAT NOW?</p></li>
+          <li><p class='answer tab'>If SEND is not activated, check that the NO VOUCHER EMAIL REQUIRED box is NOT checked. When it IS checked (<b>&#x2611;</b>), you can only SAVE, not SEND.</p></li>
+        </ul>
+        <ul>
+          <li><p class='question'>WHO RECEIVES EMAIL COPIES OF THE VOUCHER?</p></li>
+          <li><p class='answer tab'>iWERKT sends a copy of the voucher to your agency contact, your client contact, and the model's email. You have an opportunity to double-check the email addresses of the recipients BEFORE it sends. Great, eh?!</p></li>
+        </ul>
+        <ul>
+          <li><p class='question'>HOW DO I MAKE SURE MY AGENCY IS GETTING THE VOUCHER?</p></li>
+          <li><p class='answer tab'>After you have signed up, go to SETTINGS > MY AGENCIES. Click the EDIT button of your agency and make sure your AGENCY CONTACT's info is correct. When you hit SEND on a voucher, a pop-up appears before sending. This pop-up asks for confirmation of the CLIENT's EMAIL, the AGENCY's EMAIL, and YOURS as the user. You can always enter an email manually at this point as well. Good stuff to know!</p></li>
+        </ul>
+        <ul>
+          <li><p class='question'>WHAT IS THE VOUCHER'S FORMAT WHEN iWERKT SENDS THE EMAILS?</p></li>
+          <li><p class='answer tab'>iWERKT sends vouchers in PDF format. They can be saved and/or printed easily for processing and archiving.</p></li>
+        </ul>
+        <ul>
+          <li><p class='question'>HOW CAN I GET MY AGENCY'S LOGO PLACED ONTO THE TOP OF THE VOUCHER?</p></li>
+          <li><p class='answer tab'>We are happy to include any agency logo as long as you or they provide it to us. Otherwise, there is a standard photo we include as a place holder.</p></li>
+        </ul>
+        <ul>
+          <li><p class='question'>DOES iWERKT SAVE ALL OF MY SUBMITTED VOUCHERS?</p></li>
+          <li><p class='answer tab'>iWERKT keeps a record of all of your submitted vouchers, each organized by date. You can also go back and check-off a saved voucher, marking it as PAID once you've received payment for the booking(s).</p></li>
+        </ul>
+        <ul>
+          <li><p class='question'>WHAT IF I NEED TO RE-SEND A VOUCHER?</p></li>
+          <li><p class='answer tab'>If you find that the emails did not go through for some reason, shift or slide the specific voucher/work entry to the right - a SEND box will appear. You will be asked to confirm the email addresses again that you'd like to use for sending the voucher. If you continue to have issues, please feel free to <a href='mailto:&#105;&#110;&#102;&#111;&#64;&#105;&#119;&#101;&#114;&#107;&#116;&#46;&#99;&#111;&#109' class='contactLink'>contact us</a> for help!</li>
+        </ul>
+      </div>
+      <div class='backButton'><a href='faq.html'><i class="fa fa-chevron-circle-left back" aria-hidden="true"></i><p id='backText'>Return me to help categories, please.</p></a>
+      </div>
+      <div class='footer'>
+        <span id='copyright'><a href='#'>&copy NordikLabs 2016</a></span>
+        <div class='leftSide'>
+          <span class='footerLink'><a href='/privacy.html'>Privacy</a></span>
+          <span class='footerLink'><a href='/terms.html'>Terms</a></span>
+        </div>   
+        <div class='rightSide'>     
+          <span class='footerLink'><a href='/faq.html'>Need Help?</a></span> 
+          <span class='footerLink'><a href='mailto:&#105;&#110;&#102;&#111;&#64;&#105;&#119;&#101;&#114;&#107;&#116;&#46;&#99;&#111;&#109'>Contact</a></span>
+          <span class='footerLink'><a href='https://www.facebook.com/iwerkt/'><i class='fa fa-facebook icon'></i></a></span>
+          <span class='footerLink'><a href='https://twitter.com/iwerkt'><i class='fa fa-twitter icon'></i></a></span>
+          <span class='footerLink'><a href='https://www.instagram.com/iwerkt/?hl=en'><i class='fa fa-instagram icon'></i></a></span>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
 
