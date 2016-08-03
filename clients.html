@@ -3,7 +3,8 @@
   <head>
 
       <title>CLIENTS</title>
-
+      <meta charset='utf-8'>
+      <meta name='viewport' content='width=device-width initial-scale=1.0, minimum-scale=1.0, user-scalable=1'>
       <link rel="stylesheet" href='/iWerkt-master/css/font-awesome-4.6.3/css/font-awesome.min.css'>
       <script src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
       
@@ -36,6 +37,7 @@ body {
 }
 
 .mainContainer {
+  position: relative;
   overflow: hidden;
   width: 100vw;
   margin: 0;
@@ -249,6 +251,73 @@ ul {
   border-top: none !important;
   color: #4CC0BD;
 }
+/*-------------RESPONSIVE------------*/
+@media screen and (max-width: 320px) {
+.title {
+  width: 69%;
+  font-size: 27px;
+  margin: 0 0 0 25%;
+  height: 4.3%;
+  position: absolute;
+  padding: 7% 0 0 4.5%;
+  border-left: 0.5px solid rgba(255, 255, 255, 0.8);
+  }
+#logoTitle {
+  font-size: 16px;
+  margin-left: 2.4%;
+  margin-top: 16%;
+  }
+.logo img {
+  margin: 2.5% 0 0 6%;
+  width: 12%;
+  }
+.icon {
+  font-size: 20px;
+  }
+.icon li {
+  margin-left: 5%;
+  }
+.questionsContainer {
+  width: 86%;
+  margin-bottom: 5%;
+  }
+.question {
+  font-size: 19px;
+}
+.answer {
+  font-size: 17px;
+}
+.backButton {
+  display: none;
+  }
+.fa.back {
+  display: none;
+  }
+.fa.back:hover {
+  display: none;
+  }
+#backText {
+  display: none;
+  }
+.footer {
+  font-size: 12px;
+  }
+#footerLeft {
+  width: 25%;
+  }
+#footerMid {
+  width: 40%;
+  padding-top: 2%;
+  text-align: center;
+  }
+#footerRight {
+  width: 25%;
+  }
+#copyright {
+  display: none;
+  }
+}
+
 
   </style>
   <body>
