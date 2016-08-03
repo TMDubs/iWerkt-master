@@ -3,7 +3,8 @@
   <head>
 
       <title>FAQ</title>
-
+      <meta charset='utf-8'>
+      <meta name='viewport' content='width=device-width initial-scale=1.0, minimum-scale=1.0, user-scalable=1'>
       <link rel="stylesheet" href='/iWerkt-master/css/font-awesome-4.6.3/css/font-awesome.min.css'>
       <script src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
   </head>
@@ -58,10 +59,6 @@ body {
   width: 5%;
 }
 
-.logo a:hover {
-  color: #00c0ef !important;
-}
-
 .title {  
   font-size: 55px;
   color: #fff;
@@ -88,7 +85,7 @@ body {
 
 #mostFAQsTitle {
   font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
-  font-size: 35px;
+  font-size: 40px;
   width: 100vw;
   margin: 0 1% 2% 4%;
   padding-top: 3%;
@@ -99,7 +96,7 @@ body {
   font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
   list-style: none;
   display: inline-block;
-  margin: 0 auto 0 7%;
+  margin: 0 auto 0 6.5%;
   width: 100%;
 }
 
@@ -119,23 +116,21 @@ body {
   border-radius: 20px;
   box-sizing: border-box;
   color: #fff;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.4;
-  padding: 6px 14px;
+  padding: 1px 14px;
 }
 
 #faqCatContainer {
-  width: 96%;
-  margin: 0 0 5% 2%;
+  width: 100%;
   height: 100%;
+  padding-bottom: 2%;
   background-color: #80CDC9;
   float: left;
-  padding-bottom: 2%;
-  border: 4px solid #4CC0BD;
 }
 
 #topBar {
-  padding: 1.5% 2%;
+  padding: 1.5% 4%;
   font-size: 40px;
   background-color: #4CC0BD;
   margin-bottom: 4%;
@@ -150,49 +145,35 @@ body {
   padding-top: 3%;
 }
 
-.faqCatBox {
+#faqCatButtonList {
   font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
-  float: left;
-  margin: 0 0% 2% 2.5%;
-  overflow: hidden;
-  position: relative;
-  width: 21vw;
-  height: 34vh;
-  background-color: #fff;
-}
-
-#faqCatBox:hover {
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition:.5s;
-}
-
-#faqCat {
-  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
-  color: #00c0ef;
-  margin: 39% auto;
-  font-size: 25px;
-  opacity: 1;
-  position: absolute;
+  list-style: none;
+  display: inline-block;
+  margin: 0 auto 0 6.3%;
   width: 100%;
-  text-align: center;
-  line-height: 2%;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition:.5s;
 }
 
-#faqCat:hover {
-  color: #F56954;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition:.5s;
+#faqCatButtonList li {
+  float: left;
+  margin-bottom: 2%;
+  margin-right: 1%;
+}
+
+#faqCatButtonList a {
+  text-decoration: none;
+}
+
+.faqCatButton {
+  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+  background: #1399C9;
+  border-radius: 20px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 26px;
+  line-height: 1.4;
+  padding: 3%;
+  text-align: center;
+  width: 43%;
 }
 
 /*-----------FOOTER------------*/
@@ -282,6 +263,95 @@ body {
   color: #4CC0BD;
 }
 
+.footer a.activePage {
+  color: #4CC0BD;
+}
+
+@media screen and (max-width: 320px) {
+  #mostFAQsTitle {
+    font-size: 26px;
+  }
+  #faqButtonList {
+    width: 90%;
+    margin: -1% auto 2% 3.5%;
+  }
+  #faqButtonList li {
+    margin-top: 2%;
+  }
+  .faqButton {
+    padding: 4px 14px;
+    font-size: 15px;
+  }
+  #topBar {
+    font-size: 26px;
+    margin-bottom: 6%;
+  }
+  .faqCatButton {
+    font-size: 15px;
+    padding: 3%;  }
+  #faqCatButtonList {
+    margin: 2% 0 6% 5%;
+  }
+  #faqCatButtonList li {
+    margin-bottom: 6%;
+    margin-right: 4%;
+  }
+  #faqCatContainer {
+    margin-bottom: -8%;
+  }
+  .title {
+    width: 69%;
+    font-size: 27px;
+    margin: 0 0 0 25%;
+    height: 7.3%;
+    position: absolute;
+    padding: 7% 0 0 4.5%;
+    border-left: 0.5px solid rgba(255, 255, 255, 0.8);
+  }
+  #logoTitle {
+    font-size: 16px;
+    margin-left: 2.4%;
+    margin-top: 16%;
+  }
+  .logo img {
+    margin: 2.5% 0 0 6%;
+    width: 12%;
+  }
+  .icon {
+    font-size: 20px;
+  }
+  .icon li {
+    margin-left: 5%;
+  }
+  .footer {
+    font-size: 12px;
+  }
+  #footerLeft {
+    width: 25%;
+  }
+  #footerMid {
+    width: 40%;
+    padding-top: 2%;
+    text-align: center;
+  }
+  #footerRight {
+    width: 25%;
+  }
+  #copyright {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 667px) {
+  #mostFAQsTitle {
+    font-size: 55px;
+  }
+  .faqButton {
+    padding: 10%;
+  }
+}
+
+
   </style>
   <body>
     <div class='faqContainer'>
@@ -293,25 +363,27 @@ body {
       <div class='mostFAQsContainer'>
         <div id='mostFAQsTitle'>Popular Questions</div>
         <ul id='faqButtonList'>
-          <li><a href='/signup.html' class='faqButton'>How do I sign up?</a></li>
-          <li><a href='/vouchers.html' class='faqButton'>How do I create a voucher?</a></li>
-          <li><a href='/signup.html' class='faqButton'>What if I forgot my password?</a></li>
-          <li><a href='/agencies.html' class='faqButton'>How do I sign up with my agency?</a></li>
-          <li><a href='/clients.html' class='faqButton'>How do I create a half-hour rate?</a></li>
-          <li><a href='/vouchers.html' class='faqButton'>I see a pop-up that says:<i style='color:rgba(255, 255, 255, 0.8);'>"Please enter time/rate details properly."</i> What does that mean?</a></li>
-          <li><a href='/extraFeatures.html' class='faqButton'>What if I don't have good service or access to WiFi?</a></li>
+          <li class='faqButton'><a href='/signup.html'>How do I sign up?</a></li>
+          <li class='faqButton'><a href='/vouchers.html'>How do I create a voucher?</a></li>
+          <li class='faqButton'><a href='/signup.html'>What if I forgot my password?</a></li>
+          <li class='faqButton'><a href='/agencies.html'>How do I sign up with my agency?</a></li>
+          <li class='faqButton'><a href='/clients.html'>How do I create a half-hour rate?</a></li>
+          <li class='faqButton'><a href='/vouchers.html'>I see a pop-up that says:<i style='color:rgba(255, 255, 255, 0.8);'>"Please enter time/rate details properly."</i> What does that mean?</a></li>
+          <li class='faqButton'><a href='/extraFeatures.html'>What if I don't have good service or access to WiFi?</a></li>
         </ul>
       </div>
       <div id='faqCatContainer'>
         <div id='topBar'>Categories</div>
-          <div><a href='/general.html' class='faqCatBox'><p id='faqCat'>GENERAL</p></a></div>
-          <div><a href='/signup.html' class='faqCatBox'><p id='faqCat'>SIGNUP</p></a></div>
-          <div><a href='/agencies.html' class='faqCatBox'><p id='faqCat'>AGENCIES</p></a></div>
-          <div><a href='/clients.html' class='faqCatBox'><p id='faqCat'>CLIENTS</p></a></div>
-          <div><a href='/vouchers.html' class='faqCatBox'><p id='faqCat'>VOUCHERS</p></a></div>
-          <div><a href='/extraFeatures.html' class='faqCatBox'><p id='faqCat'>EXTRA FEATURES</p></a></div>
-          <div><a href='/settings.html' class='faqCatBox'><p id='faqCat'>SETTINGS</p></a></div>
-          <div><a href='/pricing.html' class='faqCatBox'><p id='faqCat'>PRICING</p></a></div>
+        <ul id='faqCatButtonList'>
+          <li class='faqCatButton'><a href='/general.html'><p id='faqCat'>GENERAL</p></a></li>
+          <li class='faqCatButton'><a href='/signup.html' class='faqCatBox'><p id='faqCat'>SIGNUP</p></a></li>
+          <li class='faqCatButton'><a href='/agencies.html'><p id='faqCat'>AGENCIES</p></a></li>
+          <li class='faqCatButton'><a href='/clients.html'><p id='faqCat'>CLIENTS</p></a></li>
+          <li class='faqCatButton'><a href='/vouchers.html'><p id='faqCat'>VOUCHERS</p></a></li>
+          <li class='faqCatButton'><a href='/extraFeatures.html'><p id='faqCat'>EXTRA FEATURES</p></a></li>
+          <li class='faqCatButton'><a href='/settings.html'><p id='faqCat'>SETTINGS</p></a></li>
+          <li class='faqCatButton'><a href='/pricing.html'><p id='faqCat'>PRICING</p></a></li>
+        </ul>
       </div>
       <div class='footer'>
         <ul id='footerLeft'>
@@ -324,7 +396,7 @@ body {
           <li class='footerlink icon'><a href='https://twitter.com/iwerkt'><a href='https://www.instagram.com/iwerkt/?hl=en'><i class='fa fa-instagram'></i></a></li>
         </ul>
         <ul id='footerRight'>
-          <li class='footerlink'><a href='/faq.html'>Need Help?</a></li>
+          <li class='footerlink'><a href='/faq.html' class='activePage'>Need Help?</a></li>
           <li class='footerlink'><a href='mailto:&#105;&#110;&#102;&#111;&#64;&#105;&#119;&#101;&#114;&#107;&#116;&#46;&#99;&#111;&#109'>Contact</a></li>
         </ul>
         <div id='copyright'><a href='#'>&copy NordikLabs 2016</a></div>

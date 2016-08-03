@@ -298,6 +298,17 @@ body {
   text-align: justify;
 }
 
+#textMobile {
+  float: left;
+  margin-top: 10%;
+  width: 75%;
+  text-align: center;
+  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #fff;
+  display: none;
+}
+
 #getPaidImg {
   margin-top: 1%;
   width: 50%;
@@ -316,7 +327,6 @@ body {
   position: relative;
   background-color: #00c0ce;
   width: 100vw;
-  height: 100%;
   clear: both;
   float: left;
 }
@@ -347,18 +357,17 @@ body {
 }
 
 #iosAppIconL img {
-  width: 25%;
+  width: 17%;
 }
 
 #androidAppIconL img {
-  width: 28.5%;
+  width: 19.5%;
 }
 
 /*-----------FOOTER------------*/
 
 .footer {
   font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
-  height: 100%;
   width: 100vw;
   overflow: hidden;
   background-color: #F56954;
@@ -441,6 +450,10 @@ body {
   color: #4CC0BD;
 }
 
+.footer a.activePage {
+  color: #4CC0BD;
+}
+
 /*-----------------RESPONSIVENESS----------------*/
 
 /*------VARIABLES-----------*/
@@ -473,21 +486,120 @@ body {
     margin-top: -10%;
   }
   #appLinks {
-    font-size: 14px;
-    padding: 5% 4% 4% 4%;
+    font-size: 21px;
+    padding-top: 6%;
+    padding-left: 3%;
   }
   #socialNav {
+    margin-right: 5%;
     margin-top: 4%;
-    margin-right: 6%;
   }
-  #socialLinks {
-  font-size: 20px;
+  .footer {
+    font-size: 13px;
   }
-  #socialLinks li {
-  margin-left: 4vw;
+  .icon {
+    font-size: 20px;
+  }
+  #footerMid {
+  padding-top: 2%;
+}
+  #copyright {
+    display: none;
   }
 }
 
+/*-------NO PAPER--------*/
+@media screen and (max-width: 320px) {
+  .noPaperContainer {
+    height: 100%;
+  }
+  #noPaperContent {
+    width: 75vw;
+  }
+  #noPaperImg01 img {
+    margin-left: 10%;
+    margin-bottom: -2%;
+    width: 70%;
+  }
+  #noPaperImg02 img {
+    margin-left: -1%;
+    margin-bottom: -2%;
+    width: 60%;
+  }
+  .title {
+    padding-top: 8%;
+  }
+}
+
+/*---------KEEP TRACK-----------*/
+
+@media screen and (max-width: 320px) {
+  #keepTrackImgContainer {
+    padding-bottom: 12%;
+  }
+  #keepTrackTitle {
+    font-size: 48px;
+  }
+}
+
+/*---------GET PAID------------*/
+
+@media screen and (max-width: 320px) {
+  #getPaidContainer {
+    height: 100%;
+  }
+  #getPaidImg {
+    margin-top: 2%;
+  }
+  #getPaidTitle {
+    margin-top: -8%;
+    margin-left: 8%;
+    font-size: 48px;
+    line-height: 1;
+  }
+
+  #getPaidContent {
+    float: left;
+    font-size: 12px;
+    margin-left: 9%;
+    margin-bottom: 17%;
+    width: 90%;
+  }
+
+  #text {
+    width: 100%;
+    margin-top: 10%;
+    text-align: left;
+    font-size: 14px;
+    display: none;
+  }
+
+  #textMobile {
+    float: left;
+    margin-top: -1%;
+    margin-left: 12%;
+    margin-bottom: 8%;
+    width: 75%;
+    text-align: center;
+    font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    display: initial;
+  }
+}
+
+/*---------GET THE APP------------*/
+
+@media screen and (max-width: 320px) {
+  .getAppContainer {
+
+  }
+  #getAppIconsLarge {
+    margin-top: 1%;
+  }
+}
+
+/*------------------------321px + -----------------------*/
 @media screen and (min-width: 321px) and (max-width: 667px) {
   #logo {
     font-size: 85px;
@@ -504,18 +616,16 @@ body {
     letter-spacing: 5px;
   }
   #appLinks {
-    font-size: 20px;
-    padding: 5% 4% 4% 4%;
+    font-size: 25px;
+    padding-top: 6%;
+    padding-left: 3%;
   }
   #socialNav {
+    margin-right: 5%;
     margin-top: 4%;
-    margin-right: 6%;
   }
   #socialLinks {
-    font-size: 28px;
-  }
-  #socialLinks li {
-    margin-left: 4vw;
+    font-size: 43px;
   }
   .title {
     padding-top: 12%;
@@ -558,27 +668,35 @@ body {
     padding-bottom: 11%;
   }
   #getPaidTitle {
-    margin-top: -17%;
-    margin-left: 3%;
+    margin-top: -8%;
+    margin-left: 8%;
+    font-size: 48px;
+    line-height: 1;
   }
   #getPaidContent {
     float: left;
-    font-size: 20px;
-    margin-left: 4%;
+    font-size: 17px;
+    margin-left: 11%;
     margin-bottom: 17%;
     width: 90%;
   }
   #text {
-    width: 100%;
-    margin-top: 10%;
-    text-align: left;
-    font-size: 20px;
+    display: none;
   }
-  #getPaidImg {
-    margin-top: 10%;
-    width: 50%;
-    position: relative;
+  #textMobile {
     float: left;
+    margin-top: -1%;
+    margin-left: 12%;
+    margin-bottom: 8%;
+    width: 76%;
+    text-align: center;
+    font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 21px;
+    color: #fff;
+    display: initial;
+  }
+ #getPaidImg {
+    margin-top: 2%;
   }
   #getPaidImg img {
     width: 110%;
@@ -588,119 +706,19 @@ body {
   }
   .footer {
     font-size: 13px;
-    height: 100%;
+  }
+  .icon {
+    font-size: 20px;
+  }
+  #footerMid {
+  padding-top: 2%;
   }
   #copyright {
     display: none;
   }
-  .leftSide {
-    width: 22%;
-    margin: 4% 0 3% 3%;
-  }
-  .rightSide {
-    width: 60%;
-    margin-top: 4%;
-    margin-right: 6%;
-  }
-  .footerLink {
-    margin-left: 5%;
-  }
-
 }
 
-/*-------NO PAPER--------*/
-@media screen and (max-width: 320px) {
-  .noPaperContainer {
-    height: 100%;
-  }
-  #noPaperContent {
-    width: 75vw;
-  }
-  #noPaperImg01 img {
-    margin-left: 10%;
-    margin-bottom: -2%;
-    width: 70%;
-  }
-  #noPaperImg02 img {
-    margin-left: -1%;
-    margin-bottom: -2%;
-    width: 60%;
-  }
-  .title {
-    padding-top: 8%;
-  }
-}
 
-/*---------KEEP TRACK------------*/
-
-@media screen and (max-width: 320px) {
-  #keepTrackImgContainer {
-    padding-bottom: 12%;
-  }
-}
-
-/*---------GET PAID------------*/
-
-@media screen and (max-width: 320px) {
-  #getPaidContainer {
-    height: 100%;
-  }
-  #getPaidImg {
-    margin-top: 12%;
-  }
-  #getPaidTitle {
-    margin-top: -12%;
-    margin-left: 3%;
-  }
-  #getPaidContent {
-    float: left;
-    font-size: 14px;
-    margin-left: 4%;
-    margin-bottom: 17%;
-    width: 90%;
-  }
-  #text {
-    width: 100%;
-    margin-top: 10%;
-    text-align: left;
-    font-size: 14px;
-  }
-}
-
-/*---------GET THE APP------------*/
-
-@media screen and (max-width: 320px) {
-  .getAppContainer {
-    height: 50vh;
-  }
-  #getAppIconsLarge {
-    margin-top: 1%;
-  }
-}
-
-/*---------FOOTER------------*/
-
-@media screen and (max-width: 320px) {
-  .footer {
-    font-size: 8px;
-    height: 100%;
-  }
-  #copyright {
-    display: none;
-  }
-  .leftSide {
-    margin-top: 4%;
-    margin-left: 3% 0 3% 3%;
-  }
-  .rightSide {
-    width: 43%;
-    margin-top: 4%;
-    margin-right: 4%;
-  }
-  .footerLink {
-    margin-left: 5%;
-  }
-}
 
 
 

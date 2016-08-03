@@ -17,7 +17,7 @@
 
   </head>
   <body>
-      
+     
     <div class='home' id='greenScreen'>
       <div id='socialNav'>
         <ul id='socialLinks'>
@@ -76,6 +76,7 @@
           <p id='text'>With iWerkt, your agency's accounting department will now be able to start their billing process right away - and that means you'll get paid <i>faster!</i></p>
         </div>
       </div>
+      <p id='textMobile'>With iWerkt, your agency's accounting department will now be able to start their billing process right away - and that means you'll get paid <i>faster!</i></p>
     </div>
 
     <div class='getAppContainer'>
@@ -104,8 +105,7 @@
         </ul>
         <div id='copyright'><a href='#'>&copy NordikLabs 2016</a></div>
       </div>
- 
-  
+
     <script type='text/javascript' id='slideshow'>
       $.backstretch(['/iWerkt-master/css/img/slideshow/01.jpg','/iWerkt-master/css/img/slideshow/02.jpg','/iWerkt-master/css/img/slideshow/03.jpg','/iWerkt-master/css/img/slideshow/04.jpg','/iWerkt-master/css/img/slideshow/05.jpg'], {duration: 3000, fade: 2000}
       );
