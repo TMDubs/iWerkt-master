@@ -471,7 +471,7 @@ body {
 /*---------HOME------------*/
 
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 479px) {
   #logo {
     font-size: 80px;
     margin-top: 25%;
@@ -509,7 +509,7 @@ body {
 }
 
 /*-------NO PAPER--------*/
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 479px) {
   .noPaperContainer {
     height: 100%;
   }
@@ -533,7 +533,7 @@ body {
 
 /*---------KEEP TRACK-----------*/
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 479px) {
   #keepTrackImgContainer {
     padding-bottom: 12%;
   }
@@ -544,7 +544,7 @@ body {
 
 /*---------GET PAID------------*/
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 479px) {
   #getPaidContainer {
     height: 100%;
   }
@@ -590,7 +590,7 @@ body {
 
 /*---------GET THE APP------------*/
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 479px) {
   .getAppContainer {
 
   }
@@ -606,7 +606,7 @@ body {
 }
 
 /*------------------------321px + -----------------------*/
-@media screen and (min-width: 321px) and (max-width: 736px) {
+@media screen and (max-width: 767px) {
   #logo {
     font-size: 85px;
     margin-top: 30%;
