@@ -40,7 +40,25 @@ body {
   width: 100vw;
   padding-bottom: 4%;
   position: relative;
-  background-color: #80CDC9;
+  background-color: #fff;
+}
+
+.bodyContainer {
+  width: 90%;
+  background-color: #80cdc9;
+  margin: auto;
+}
+
+.termsBody {
+  width: 90%;
+  padding: 5% 0;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #fff;
+  text-align: justify;
+  margin: auto;
+  margin-top: 50px;
+  opacity: 0.8;
 }
 
 .header {
@@ -88,16 +106,7 @@ body {
   padding: 0 0 2% 4%;
 }
 
-.termsBody {
-  width: 75%;
-  font-size: 20px;
-  line-height: 1.5;
-  color: #fff;
-  text-align: justify;
-  margin: auto;
-  margin-top: 50px;
-  opacity: 0.8;
-}
+
 
 /*-----------FOOTER------------*/
 
@@ -189,10 +198,66 @@ body {
 .footer a.activePage {
   color: #4CC0BD;
 }
+/*-------------RESPONSIVE------------*/
+@media screen and (max-width: 320px) {
+.title {
+  width: 69%;
+  font-size: 27px;
+  margin: 0 0 0 25%;
+  height: 0.4%;
+  position: absolute;
+  padding: 7% 0 0 4.5%;
+  border-left: 0.5px solid rgba(255, 255, 255, 0.8);
+  }
+#date {
+  margin: -5% 0 0 26%;
+  font-size: 14px;
+}
+#logoTitle {
+  font-size: 16px;
+  margin-left: 2.4%;
+  margin-top: 16%;
+  }
+.bodyContainer {
+  margin: -10% auto 1% auto;
+}
+.termsBody {
+  font-size: 15px;
+  text-align: left;
+}
+.logo img {
+  margin: 3.5% 0 0 6%;
+  width: 12%;
+  }
+.icon {
+  font-size: 20px;
+  }
+.icon li {
+  margin-left: 5%;
+  }
+
+.footer {
+  font-size: 12px;
+  }
+#footerLeft {
+  width: 25%;
+  }
+#footerMid {
+  width: 40%;
+  padding-top: 2%;
+  text-align: center;
+  }
+#footerRight {
+  width: 25%;
+  }
+#copyright {
+  display: none;
+  }
+}
 
   </style>
   <body>
-    
+   
     <div class='termsContainer'>
       <div class='header'>
         <a class='logo' href='/'><img src='/iWerkt-master/css/img/iWerktLogo.jpg'></a>
@@ -200,6 +265,7 @@ body {
        <div id='logoTitle'>iWERKT</div>
          <p id='date'>Last Modified: June 28, 2016</p>
       </div>
+       <div class='bodyContainer'>
         <p class='termsBody'>
           <b>ACCEPTANCE OF THE TERMS OF USE</b>
           <br>
@@ -459,6 +525,7 @@ body {
           <br><br>
           Thank you for visiting the Website and for using our App.
         </p>
+      </div>
       </div>
     </div>
     <div class='footer'>
