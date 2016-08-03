@@ -244,6 +244,10 @@ ul {
   color: #4CC0BD;
 }
 
+.footer a.activePage {
+  color: #4CC0BD;
+}
+
 /*-------------RESPONSIVE------------*/
 @media screen and (max-width: 320px) {
 .title {
@@ -311,6 +315,76 @@ ul {
   }
 }
 
+@media screen and (min-width: 321px) and (max-width: 667px) {
+.title {
+  width: 69%;
+  font-size: 31px;
+  margin: 0 0 0 25%;
+  height: 4.8%;
+  position: absolute;
+  padding: 7% 0 0 4.5%;
+  border-left: 0.5px solid rgba(255, 255, 255, 0.8);
+  }
+#logoTitle {
+  font-size: 16px;
+  margin-left: 4%;
+  margin-top: 16%;
+  }
+.logo img {
+  margin: 2.5% 0 0 6%;
+  width: 12%;
+  }
+.icon {
+  font-size: 20px;
+  }
+.icon li {
+  margin-left: 5%;
+  }
+.questionsContainer {
+  width: 90%;
+  margin-bottom: 5%;
+  padding-bottom: 5.5%;
+  }
+.question {
+  font-size: 19px;
+  margin-top: 7.5%;
+  margin-bottom: 2.5%;
+}
+.answer {
+  font-size: 17px;
+}
+.backButton {
+  display: none;
+  }
+.fa.back {
+  display: none;
+  }
+.fa.back:hover {
+  display: none;
+  }
+#backText {
+  display: none;
+  }
+.footer {
+  font-size: 12px;
+  }
+#footerLeft {
+  width: 25%;
+  }
+#footerMid {
+  width: 40%;
+  padding-top: 2%;
+  text-align: center;
+  }
+#footerRight {
+  width: 25%;
+  }
+#copyright {
+  display: none;
+  }
+}
+
+
   </style>
   <body>
     <div class='mainContainer'>
@@ -347,7 +421,7 @@ ul {
           <li class='footerlink icon'><a href='https://twitter.com/iwerkt'><a href='https://www.instagram.com/iwerkt/?hl=en'><i class='fa fa-instagram'></i></a></li>
         </ul>
         <ul id='footerRight'>
-          <li class='footerlink'><a href='/faq.html'>Need Help?</a></li>
+          <li class='footerlink'><a href='/faq.html' class='activePage'>Need Help?</a></li>
           <li class='footerlink'><a href='mailto:&#105;&#110;&#102;&#111;&#64;&#105;&#119;&#101;&#114;&#107;&#116;&#46;&#99;&#111;&#109'>Contact</a></li>
         </ul>
         <div id='copyright'><a href='#'>&copy NordikLabs 2016</a></div>

@@ -597,10 +597,16 @@ body {
   #getAppIconsLarge {
     margin-top: 1%;
   }
+  #iosAppIconL img {
+    width: 25%;
+  }
+  #androidAppIconL img {
+  width: 28%;
+  }
 }
 
 /*------------------------321px + -----------------------*/
-@media screen and (min-width: 321px) and (max-width: 667px) {
+@media screen and (min-width: 321px) and (max-width: 736px) {
   #logo {
     font-size: 85px;
     margin-top: 30%;
@@ -703,6 +709,12 @@ body {
   }
   #getAppTitle {
     margin-top: -5%;
+  }
+  #iosAppIconL img {
+    width: 25%;
+  }
+  #androidAppIconL img {
+  width: 28%;
   }
   .footer {
     font-size: 13px;
