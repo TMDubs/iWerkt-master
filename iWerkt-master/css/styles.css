@@ -4,27 +4,6 @@ version:  2.0
 date:     July 20, 2016
 author: TMW
 ------------------------------*/
-/*FONTS----------------------
-
-@font-face {
-  font-family: 'Frutiger LT Std';
-  src: url('/iWerkt-master/css/fonts/frutigerLTStd_Bold.otf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Frutiger LT Std';
-  src: url('/iWerkt-master/css/fonts/frutigerLTStd_Light.otf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Gibson-Regular';
-  src: url('/iWerkt-master/css/fonts/gibsonBold.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Gibson-Semibold';
-  src: url('/iWerkt-master/css/fonts/gibsonSemiboldWebfont.ttf') format('truetype');
-}*/
 
 /*Keyframes------------------*/
 @keyframes fadein {
@@ -74,9 +53,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-#slideshow {
-  width: 100vw;
-}
+
 
 #greenScreen {
   width: 100vw;
@@ -458,7 +435,7 @@ body {
 
 /*------VARIABLES-----------*/
 
-@media screen and (max-width: 320px) {
+@media screen (max-width: 320px) {
   .content {
     font-size: 15px;
     text-align: center;
@@ -468,31 +445,40 @@ body {
   }
 }
 
-/*---------HOME------------*/
-
-
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 320px) {
   #logo {
     font-size: 80px;
     margin-top: 25%;
     height: 22%;
   }
   .subTitle {
-    width: 100%;
-    margin-left: 0;
+    margin: 0 auto;
+    width: 85%;
     font-weight: bolder;
-    font-size: 14px;
+    font-size: 22px;
     text-align: center;
     margin-top: -10%;
   }
   #appLinks {
-    font-size: 21px;
-    padding-top: 6%;
-    padding-left: 3%;
+    width: 69%;
+    font-size: 30px;
+    padding-top: 11%;
+    height: 5%;
+    margin: auto;
   }
   #socialNav {
-    margin-right: 5%;
-    margin-top: 4%;
+    width: 60%;
+    text-align: center;
+    height: 8%;
+    margin: 120% 0 0 17%;
+    position: absolute;
+    clear: both;
+  }
+  #socialLinks {
+    font-size: 40px;
+  }
+  #socialLinks li {
+    margin-left: 14%;
   }
   .footer {
     font-size: 13px;
@@ -509,12 +495,14 @@ body {
 }
 
 /*-------NO PAPER--------*/
-@media screen and (max-width: 479px) {
+
+@media screen and (max-width: 320px) {
   .noPaperContainer {
     height: 100%;
   }
   #noPaperContent {
-    width: 75vw;
+    width: 96vw;
+    font-size: 19px;
   }
   #noPaperImg01 img {
     margin-left: 10%;
@@ -528,23 +516,28 @@ body {
   }
   .title {
     padding-top: 8%;
+    font-size: 48px;
   }
 }
 
 /*---------KEEP TRACK-----------*/
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 320px) {
   #keepTrackImgContainer {
     padding-bottom: 12%;
   }
   #keepTrackTitle {
     font-size: 48px;
   }
+  #keepTrackContent {
+    font-size: 19px;
+    width: 96%;
+  }
 }
 
 /*---------GET PAID------------*/
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 320px) {
   #getPaidContainer {
     height: 100%;
   }
@@ -586,29 +579,21 @@ body {
     color: #fff;
     display: initial;
   }
-}
 
-/*---------GET THE APP------------*/
-
-@media screen and (max-width: 479px) {
-  .getAppContainer {
-
-  }
-  #getAppIconsLarge {
-    margin-top: 1%;
-  }
   #iosAppIconL img {
-    width: 25%;
+  width: 30%;
   }
+
   #androidAppIconL img {
-  width: 28%;
+  width: 33.5%;
   }
 }
+
 
 /*------------------------321px + -----------------------*/
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 321px) and (max-width: 414px) {
   #logo {
-    font-size: 85px;
+    font-size: 96px;
     margin-top: 30%;
     height: 15%;
   }
@@ -618,31 +603,42 @@ body {
     font-weight: bolder;
     font-size: 20px;
     text-align: center;
-    margin-top: -3%;
     letter-spacing: 5px;
   }
   #appLinks {
-    font-size: 25px;
-    padding-top: 6%;
-    padding-left: 3%;
+    width: 70%;
+    font-size: 37px;
+    padding-top: 11%;
+    height: 5%;
+    margin: auto;
   }
   #socialNav {
-    margin-right: 5%;
-    margin-top: 4%;
+   width: 60%;
+   text-align: center;
+   height: 8%;
+   margin: 150% 0 0 17%;
+   position: absolute;
+   clear: both;
   }
   #socialLinks {
-    font-size: 43px;
+    font-size: 45px;
+  }
+  #socialLinks li {
+    margin-left: 14%;
   }
   .title {
-    padding-top: 12%;
+    padding-top: 9%;
     font-size: 60px;
   }
   .content {
     font-size: 21px;
   }
   .screenShots {
-
     margin-top: -5%;
+  }
+  #noPaperContent {
+    font-size: 20px;
+    width: 85vw;
   }
   #noPaperImg01 {
     margin-left: 35%;
@@ -701,20 +697,23 @@ body {
     color: #fff;
     display: initial;
   }
+  #getAppTitle {
+    margin-top: -1%;
+  }
+  #getAppIconsLarge {
+    margin-top: 1%;
+  }
+  #iosAppIconL img {
+    width: 30%;
+  }
+  #androidAppIconL img {
+    width: 34.5%;
+  }
  #getPaidImg {
     margin-top: 2%;
   }
   #getPaidImg img {
     width: 110%;
-  }
-  #getAppTitle {
-    margin-top: -5%;
-  }
-  #iosAppIconL img {
-    width: 25%;
-  }
-  #androidAppIconL img {
-  width: 28%;
   }
   .footer {
     font-size: 13px;
