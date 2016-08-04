@@ -429,6 +429,27 @@ body {
   color: #4CC0BD;
 }
 
+.footerMobileTop {
+  display: none;
+}
+#footerMobileLinks {
+  display: none;
+}
+#footerMobileLinks li {
+  display: none;
+}
+#followUs {
+  display: none;
+}
+#footerMobileIcons {
+  display: none;
+}
+#footerMobileIcons li {
+  display: none;
+}
+#copyrightMobile {
+  display: none;
+}
 /*-----------------RESPONSIVENESS----------------*/
 
 /*------VARIABLES-----------*/
@@ -577,22 +598,32 @@ body {
   #footerRight {
     display: none;
   }
+  #footerRight li {
+    display: inline-block;
+    margin-left: 18%;
+    margin-top: 3%;
+  }
+
   #copyright {
     display: none;
   }
   .footerMobileTop {
+    display: block;
     font-size: 18px;
     text-align: center;
   }
   #footerMobileLinks {
+    display: block;
     height: 5%;
   }
   #footerMobileLinks li {
+    display: block;
     list-style: none;
     border-bottom: solid 1px rgba(255,255,255,0.3);
     padding: 3% 0;
   }
   #followUs {
+    display: block;
     font-size: 12px;
     width: 100%;
     text-align: center;
@@ -603,15 +634,18 @@ body {
     padding-bottom: 1%;
   }
   #footerMobileIcons {
+    display: block;
     font-size: 45px;
     text-align: center;
     margin-left: 19%;
   }
   #footerMobileIcons li {
+    display: block;
     float: left;
     padding: 5% 0 5% 0;
   }
   #copyrightMobile {
+    display: block;
     float: left;
     margin-left: 3%;
     font-size: 15px;
@@ -753,22 +787,31 @@ body {
   #footerRight {
     display: none;
   }
+  #footerRight li {
+  display: inline-block;
+  margin-left: 18%;
+  margin-top: 3%;
+  }
   #copyright {
     display: none;
   }
   .footerMobileTop {
+    display: block;;
     font-size: 23px;
     text-align: center;
   }
   #footerMobileLinks {
+    display: block;
     height: 5%;
   }
   #footerMobileLinks li {
+    display: block;
     list-style: none;
     border-bottom: solid 1px rgba(255,255,255,0.3);
     padding: 3% 0;
   }
   #followUs {
+    display: block;
     font-size: 15px;
     width: 100%;
     text-align: center;
@@ -779,15 +822,18 @@ body {
     padding-bottom: 1%;
   }
   #footerMobileIcons {
+    display: block;
     text-align: center;
     margin-left: 18.5%;
   }
   #footerMobileIcons li {
+    display: block;
     font-size: 50px;
     float: left;
     padding: 5% 0 5% 0;
   }
   #copyrightMobile {
+    display: block;
     float: left;
     margin-left: 3%;
     font-size: 15px;

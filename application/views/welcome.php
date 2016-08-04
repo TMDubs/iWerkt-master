@@ -91,21 +91,21 @@
       </div>  
     </div>
     
-      <div class='footer'>
-        <ul id='footerLeft'>
-          <li class='footerlink'><a href='/privacy.html'>Privacy</a></li>
-          <li class='footerlink'><a href='/terms.html'>Terms</a></li>
-        </ul>
-        <ul id='footerMid'>
-          <li class='footerlink icon'><a href='https://www.facebook.com/iwerkt/'><i class='fa fa-facebook-square'></i></a></li>
-          <li class='footerlink icon'><a href='https://twitter.com/iwerkt'><i class='fa fa-twitter-square'></i></a></li>
-          <li class='footerlink icon'><a href='https://twitter.com/iwerkt'><a href='https://www.instagram.com/iwerkt/?hl=en'><i class='fa fa-instagram'></i></a></li>
-        </ul>
-        <ul id='footerRight'>
-          <li class='footerlink'><a href='/faq.html'>Need Help?</a></li>
-          <li class='footerlink'><a href='mailto:&#105;&#110;&#102;&#111;&#64;&#105;&#119;&#101;&#114;&#107;&#116;&#46;&#99;&#111;&#109'>Contact</a></li>
-        </ul>
-        <div id='copyright'><a href='#'>&copy NordikLabs 2016</a></div>
+    <div class='footer'>
+      <ul id='footerLeft'>
+        <li class='footerlink'><a href='/privacy.html'>Privacy</a></li>
+        <li class='footerlink'><a href='/terms.html'>Terms</a></li>
+      </ul>
+      <ul id='footerMid'>
+        <li class='footerlink icon'><a href='https://www.facebook.com/iwerkt/'><i class='fa fa-facebook-square'></i></a></li>
+        <li class='footerlink icon'><a href='https://twitter.com/iwerkt'><i class='fa fa-twitter-square'></i></a></li>
+        <li class='footerlink icon'><a href='https://twitter.com/iwerkt'><a href='https://www.instagram.com/iwerkt/?hl=en'><i class='fa fa-instagram'></i></a></li>
+      </ul>
+      <ul id='footerRight'>
+        <li class='footerlink'><a href='/faq.html'>Need Help?</a></li>
+        <li class='footerlink'><a href='mailto:&#105;&#110;&#102;&#111;&#64;&#105;&#119;&#101;&#114;&#107;&#116;&#46;&#99;&#111;&#109'>Contact</a></li>
+      </ul>
+      <div id='copyright'><a href='#'>&copy NordikLabs 2016</a></div>
      
       <div class='footerMobileTop'>
         <ul id='footerMobileLinks'>
@@ -123,8 +123,8 @@
           <li class='footerlink icon'><a href='https://twitter.com/iwerkt'><a href='https://www.instagram.com/iwerkt/?hl=en'><i class='fa fa-instagram'></i></a></li>
         </ul>
       </div>
-       <div id='copyrightMobile'><a href='#'>&copy NordikLabs 2016</a></div>
-     </div>
+      <div id='copyrightMobile'><a href='#'>&copy NordikLabs 2016</a></div>
+    </div>
 
     <script type='text/javascript' id='slideshow'>
       $.backstretch(['/iWerkt-master/css/img/slideshow/01.jpg','/iWerkt-master/css/img/slideshow/02.jpg','/iWerkt-master/css/img/slideshow/03.jpg','/iWerkt-master/css/img/slideshow/04.jpg','/iWerkt-master/css/img/slideshow/05.jpg'], {duration: 3000, fade: 2000}
