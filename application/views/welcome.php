@@ -32,9 +32,7 @@
       <div id='logo'>iWERKT</div>
       <div class='subTitle'>DIGITAL VOUCHERS 4 MODELS</div>
       <div id='slideshow'></div>
-      
     </div>
-
     <div class='noPaperContainer'>
       <div class='title'>No paper.</div>
       <div class='content' id='noPaperContent'>
@@ -50,7 +48,6 @@
         <div id='noPaperImg02'><img src='/iWerkt-master/css/img/calendarViewBlackPhone_631x800.png'></div> 
       </div>  
     </div>
-
     <div class='keepTrackContainer'>
       <div class='title' id='keepTrackTitle'>Keep track of everything.</div>
       <div class='content' id='keepTrackContent'>
