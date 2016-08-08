@@ -19,7 +19,6 @@
 
   </head>
   <body>
-     
     <div class='home' id='greenScreen'>
       <div id='socialNav'>
         <ul id='socialLinks'>
@@ -31,8 +30,9 @@
       <div id='appLinks'><a href='https://itunes.apple.com/us/app/iwerkt/id1097698969?mt=8'>iOS</a> | <a href='https://play.google.com/store/apps/details?id=com.ivymdl.iwerkt'>Android</a></div>
       <div id='logo'>iWERKT</div>
       <div class='subTitle'>DIGITAL VOUCHERS 4 MODELS</div>
-      <div id='slideshow'></div>
+      <div class='slideshow'></div>
     </div>
+
     <div class='noPaperContainer'>
       <div class='title'>No paper.</div>
       <div class='content' id='noPaperContent'>
@@ -124,7 +124,8 @@
     </div>
 
     <script type='text/javascript' id='slideshow'>
-      $.backstretch(['/iWerkt-master/css/img/slideshow/01.jpg','/iWerkt-master/css/img/slideshow/02.jpg','/iWerkt-master/css/img/slideshow/03.jpg','/iWerkt-master/css/img/slideshow/04.jpg','/iWerkt-master/css/img/slideshow/05.jpg'], {duration: 3000, fade: 2000}
+      $.backstretch(
+        ['/iWerkt-master/css/img/slideshow/01.jpg','/iWerkt-master/css/img/slideshow/02.jpg','/iWerkt-master/css/img/slideshow/03.jpg','/iWerkt-master/css/img/slideshow/04.jpg','/iWerkt-master/css/img/slideshow/05.jpg'], {duration: 3000, fade: 2000}
       );
     </script>
   </body>

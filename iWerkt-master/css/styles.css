@@ -4,10 +4,6 @@ version:  2.0
 date:     July 20, 2016
 author: TMW
 ------------------------------*/
-@font-face {
-  font-family: tahoma;
-  src: url('/iWerkt-master/css/fonts/tahoma.ttf');
-}
 
 /*Keyframes------------------*/
 @keyframes fadein {
@@ -53,8 +49,13 @@ a {
   transition:.25s;
 }
 
-body {
+html, body {
+  overflow-x: hidden;
+  width: -webkit-calc(100% - 0px);
   -webkit-font-smoothing: antialiased;
+}
+
+#slideshow {
 }
 
 #greenScreen {
@@ -99,11 +100,13 @@ body {
   font-family: Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 30px;
   color: #fff;
-  padding: 2%;
-  margin-left: 1%;
+  padding: 1%;
+  margin-left: 2%;
+  margin-top: 2%;
   opacity: 0;
   letter-spacing: 3px;
-  width: 50%;
+  width: 17%;
+  border: solid 2px rgba(255, 255, 255, 0.8);
   -moz-animation: fadein .5s ease-in 3.5s forwards; 
   -webkit-animation: fadein .5s ease-in 3.5s forwards; 
   -o-animation: fadein .5s ease-in 3.5s forwards; 
@@ -472,7 +475,7 @@ body {
 
 @media screen and (max-width: 320px) {
   #logo {
-    font-family: tahoma, 'Helvetica Neue Regular', Helvetica, Arial, sans-serif;
+    font-family: 'Tahoma', 'Helvetica Neue Regular', Helvetica, Arial, sans-serif;
     font-size: 80px;
     margin-top: 25%;
     height: 22%;
@@ -609,9 +612,11 @@ body {
     margin-left: 18%;
     margin-top: 3%;
   }
-
   #copyright {
     display: none;
+  }
+  .footer {
+    padding-top: 0;
   }
   .footerMobileTop {
     display: block;
@@ -662,7 +667,7 @@ body {
 /*------------------------321px + -----------------------*/
 @media screen and (min-width: 321px) and (max-width: 414px) {
   #logo {
-    font-family: tahoma, Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Tahoma', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 96px;
     margin-top: 30%;
     height: 15%;
@@ -801,8 +806,11 @@ body {
   #copyright {
     display: none;
   }
+  .footer {
+    padding-top: 0;
+  }
   .footerMobileTop {
-    display: block;;
+    display: block;
     font-size: 23px;
     text-align: center;
   }
